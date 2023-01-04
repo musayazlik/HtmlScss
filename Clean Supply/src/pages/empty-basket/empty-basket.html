@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <title>Card Page Component</title>
+  <meta name = "author" content = "Musa Yazlık">
+  <meta name = "description" content = "">
+  <meta name = "keywords" content = "">
+  <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+  <meta charset = "UTF-8">
+  <!-- Google Font -->
+  <link rel = "preconnect" href = "https://fonts.gstatic.com">
+  <link href = "https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap" rel = "stylesheet">
+  <link rel = "stylesheet" href = "../../../dist/main/main.css">
+</head>
+<body class = "">
+<header id = "header"></header>
+<div class = "wrapper-area d-flex ">
+  <section id = "sidebar" class = "d-flex position-relative min-vh-100">
+  </section>
+  <!-- ************ Content Start ************ -->
+  <div class = "container-fluid px-3 pt-2 pb-4">
+    <div class = "content-header py-2 pl-3 pr-2  mt-3 rounded-sm d-flex justify-content-between">
+      <h2 class = "m-0 text-white d-flex align-items-center">Empty Basket</h2>
+
+    </div>
+    <div class = "content-body min-vh-100 rounded-sm py-3  mt-3">
+      <div class = "container-fluid">
+        <div class = "card-items row view-group justify-content-between justify-content-lg-start">
+          <div class = "item col-12 col-sm-6 col-lg-6 col-xl-4 d-flex flex-column align-self-auto list-group-item">
+            <div class = "card shadow-sm  ">
+              <div style="width: 100px; height: 100px;" class = "empty-icon my-4 mx-auto d-flex justify-content-center align-items-center rounded-circle shadow-sm">
+                <i style="font-size: 64px;" class="bi bi-cart4 text-muted"></i>
+              </div>
+              <div class="empty-title mb-3 text-center">
+                <h2 class="text-muted ">Your basket is empty.</h2>
+              </div>
+              <div class="empty-button text-center mb-5">
+                <a href = "#">
+                  <button style="font-size: 20px" class="btn btn-outline-info rounded-0 px-4 py-2 justify-content-center d-flex align-items-center mx-auto shadow-sm"><i class="bi bi-arrow-left-circle mr-2 "></i>Continue Shopping</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ************ Content End ************ -->
+</div>
+<footer id = "footer" style = "height: 500px;"></footer>
+<script src = "../../../dist/main/main.js"></script>
+</body>
+</html>

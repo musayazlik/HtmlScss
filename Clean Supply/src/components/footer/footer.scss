@@ -1,0 +1,157 @@
+#footer {
+  width      : 100%;
+  background : $f-dark-color;
+  color      : $f-text-color;
+  padding    : 30px 0 0 0;
+
+
+  .column-1 {
+
+    h3 {
+      color          : $f-text-color;
+      margin         : 20px 0 15px 0;
+      font-weight    : 500;
+      letter-spacing : 2px;
+      font-size      : 21px;
+      min-font-size  : 15px;
+    }
+
+    .app-area {
+
+      width           : 260px;
+      min-height      : 280px;
+      display         : flex;
+      justify-content : space-evenly;
+      flex-direction  : column;
+
+      .app-back {
+        background    : $app-bg-color;
+        padding       : 20px 15px;
+        border-radius : 4px;
+        transition    : 0.2s;
+
+        &:hover {
+          box-shadow : 0 2px 10px 0px $app-bg-color;
+        }
+
+        .app-text {
+          margin-left : 20px;
+          height      : 100%;
+
+          p {
+            color     : $f-text-color;
+            font-size : 13px;
+          }
+
+          b {
+            color     : $f-text-color;
+            font-size : 26px;
+          }
+        }
+
+      }
+    }
+  }
+
+  .column-2 {
+
+
+    li:not(:last-child) {
+      margin-bottom : 10px;
+    }
+
+    a {
+      color      : $f-text-color;
+      transition : 0.2s;
+      font-size  : 17px;
+
+      &:hover {
+        color : $secondary;
+      }
+    }
+
+  }
+
+  .column-3 {
+
+    h3 {
+      color         : $f-text-color;
+      font-size     : 22px;
+      margin-bottom : 20px;
+    }
+
+    i {
+      color        : $f-text-color;
+      font-size    : 22px;
+      margin-right : 10px;
+    }
+
+
+    .address {
+
+      address {
+
+        p {
+          color : $f-text-color;
+          font-size: 16px;
+        }
+
+      }
+    }
+
+    .phone {
+
+      i {
+        font-size: 16px;
+      }
+
+      a {
+        color : $f-text-color;
+        font-size: 16px;
+
+      }
+    }
+
+    .e-mail {
+      i.bi-envelope {
+        font-size: 16px;
+
+        &::before {
+          vertical-align: -4px !important;
+        }
+      }
+
+
+
+      a {
+        color : $f-text-color;
+        font-size: 18px;
+      }
+    }
+
+  }
+
+  .social {
+
+
+    i {
+      color      : $f-text-color;
+      transition : 0.2s;
+
+      &:hover {
+
+        color : $secondary;
+      }
+    }
+
+  }
+
+  .by-designer {
+
+    span i {
+      color        : $red;
+      margin-right : 10px;
+
+    }
+  }
+}

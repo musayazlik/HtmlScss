@@ -1,0 +1,29 @@
+$fontsize: 8, 12, 14, 16, 18, 20, 24,28, 32, 64;
+
+@each $var in $fontsize {
+  .fs-#{$var} {
+    font-size: $var + px;
+    line-height: $var + px;
+  }
+}
+
+$wh: 22, 24, 26, 28, 30, 32, 40, 44, 64;
+
+@each $var in $wh {
+  .wh-#{$var} {
+    width: $var + px;
+    height: $var + px;
+    max-width: $var + px;
+    max-height: $var + px;
+    min-width: $var + px;
+    min-height: $var + px;
+  }
+}
+
+$lh: 16, 18, 20;
+
+@each $var in $lh {
+  .lh-#{$var} {
+    line-height: $var + px;
+  }
+}

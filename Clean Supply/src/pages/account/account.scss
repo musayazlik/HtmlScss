@@ -1,0 +1,19 @@
+.account-page {
+  .card {
+    i {
+      font-size   : 46px;
+      height      : 46px;
+      line-height : 46px;
+    }
+
+    .account-text {
+      h3 {
+        font-size : clamp(18px, 1.9vw, 28px);
+      }
+
+      p {
+        font-size : clamp(13px, 2vw, 16px);
+      }
+    }
+  }
+}

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+  <title>My Orders</title>
+  <meta name = "author" content = "Musa Yazlık">
+  <meta name = "description" content = "">
+  <meta name = "keywords" content = "">
+  <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+  <meta charset = "UTF-8">
+
+  <!-- Google Font -->
+  <link rel = "preconnect" href = "https://fonts.gstatic.com">
+  <link href = "https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap" rel = "stylesheet">
+
+  <link rel = "stylesheet" href = "../../../dist/main/main.css">
+
+
+</head>
+
+<body class = "">
+
+
+<header id = "header">
+
+</header>
+
+
+<div class = "wrapper-area d-flex ">
+
+  <section id = "sidebar" class = "d-flex position-relative min-vh-100">
+  </section>
+
+  <!-- ************ Content Start ************ -->
+  <div class = "container-fluid px-3 pt-2 pb-4">
+    <div class = "content-header py-2 pl-3 pr-2  mt-3 rounded-sm d-flex justify-content-between">
+      <h2 class = "m-0 text-white ">My Orders</h2>
+      <a class = "btn btn-outline-info"
+         data-toggle = "collapse"
+         href = "#collapseExampleg"
+         role = "button"
+         aria-expanded = "false"
+         aria-controls = "collapseExample">
+        <i class = "bi bi-search text-white"></i>
+      </a>
+    </div>
+    <div style = "width: 320px; right: 1rem;" class = "product-search mt-2 shadow-sm position-absolute">
+      <div class = "collapse" id = "collapseExampleg">
+        <div class = "card card-body m-0 py-4 px-2">
+          <div class = "container-fluid d-flex flex-wrap justify-content-start">
+
+            <form action = "">
+              <label class = "w-100 mb-3" for = "card-id">
+                Card Id
+                <input id = "card-id"
+                       class = "form-control "
+                       type = "number"
+                       >
+              </label>
+              <label class = "w-100 mb-3" for = "total">
+                Total
+                <input id = "total"
+                       class = "form-control"
+                       step = "0.01"
+                       type = "number"
+                >
+              </label>
+              <label class = "w-100 mb-3" for = "order-date">
+                Order Data
+                <input id = "order-date"
+                       class = "form-control "
+                       type = "text"
+                       name = "dates"
+                >
+              </label>
+              <div class = "form-group w-100 mb-3">
+                <label for = "paid-online">Paid Online</label>
+                <select class = "form-control" id = "paid-online">
+                  <option>None</option>
+                  <option>Active</option>
+                  <option>Passive</option>
+                </select>
+              </div>
+              <label class = "w-100 mb-3" for = "order-id">
+                Order Id
+                <input id = "order-id"
+                       class = "form-control "
+                       type = "number"
+                >
+              </label>
+              <label class = "w-100 mb-3" for = "reference">
+                Referance
+                <input id = "reference"
+                       class = "form-control "
+                       type = "text"
+                >
+              </label>
+              <div class = "w-100 d-flex justify-content-around mt-2">
+                <button class = "btn btn-success px-3">Search</button>
+                <button class = "btn btn-outline-danger px-3">Reset</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class = "content-body min-vh-100 rounded-sm p-2 mt-3">
+      <p class = "text-muted mt-1 ml-2">Out of 2 records 1-2 is monitoring.</p>
+      <div class = "order-card mb-3 bg-white">
+        <div class = "order-card-header">
+          <h3 class = "py-2 m-0 px-2 text-white">Order Id: #2983</h3>
+        </div>
+        <div class = "order-card-body p-2">
+          <div class = "card-order-data my-2 ml-1">
+            <p class="m-0 text-muted">Order Date: 30.06.2021</p>
+          </div>
+          <div class = "card-order-total my-2 ml-1">
+            <p class="m-0 text-muted">Total : £108.00</p>
+          </div>
+        </div>
+        <div class = "order-card-footer d-flex px-2 py-2 flex-nowrap justify-content-start justify-content-md-start">
+          <a href="#" class="btn text-muted text-center "><i class="bi bi-credit-card text-muted pr-2"></i>Pay Now</a>
+          <a href="#" class="btn text-muted text-center"><i class="bi bi-eye text-muted pr-2"></i>View</a>
+          <a href="#" class="btn  text-muted"><i class="bi bi-file-earmark-arrow-down text-muted pr-2"></i>Download</a>
+          <a href="#" class="btn text-muted"><i class="bi bi-arrow-counterclockwise text-muted pr-2"></i>Order Again</a>
+        </div>
+      </div>
+      <div class = "order-card mb-3 bg-white">
+        <div class = "order-card-header">
+          <h3 class = "py-2 m-0 px-2 text-white">Order Id: #2983</h3>
+        </div>
+        <div class = "order-card-body p-2">
+          <div class = "card-order-data my-2 ml-1">
+            <p class="m-0 text-muted">Order Date: 30.06.2021</p>
+          </div>
+          <div class = "card-order-total my-2 ml-1">
+            <p class="m-0 text-muted">Total : £108.00</p>
+          </div>
+        </div>
+        <div class = "order-card-footer d-flex px-2 py-2 flex-nowrap justify-content-start justify-content-md-start">
+          <a href="#" class="btn text-muted text-center "><i class="bi bi-credit-card text-muted pr-2"></i>Pay Now</a>
+          <a href="#" class="btn text-muted text-center"><i class="bi bi-eye text-muted pr-2"></i>View</a>
+          <a href="#" class="btn  text-muted"><i class="bi bi-file-earmark-arrow-down text-muted pr-2"></i>Download</a>
+          <a href="#" class="btn text-muted"><i class="bi bi-arrow-counterclockwise text-muted pr-2"></i>Order Again</a>
+
+        </div>
+      </div>
+      <div class = "order-card mb-3 bg-white">
+        <div class = "order-card-header">
+          <h3 class = "py-2 m-0 px-2 text-white">Order Id: #2983</h3>
+        </div>
+        <div class = "order-card-body p-2">
+          <div class = "card-order-data my-2 ml-1">
+            <p class="m-0 text-muted">Order Date: 30.06.2021</p>
+          </div>
+          <div class = "card-order-total my-2 ml-1">
+            <p class="m-0 text-muted">Total : £108.00</p>
+          </div>
+        </div>
+        <div class = "order-card-footer d-flex px-2 py-2 flex-nowrap justify-content-start justify-content-md-start">
+          <a href="#" class="btn text-muted text-center "><i class="bi bi-credit-card text-muted pr-2"></i>Pay Now</a>
+          <a href="#" class="btn text-muted text-center"><i class="bi bi-eye text-muted pr-2"></i>View</a>
+          <a href="#" class="btn  text-muted"><i class="bi bi-file-earmark-arrow-down text-muted pr-2"></i>Download</a>
+          <a href="#" class="btn text-muted"><i class="bi bi-arrow-counterclockwise text-muted pr-2"></i>Order Again</a>
+
+        </div>
+      </div>
+      <div class = "order-card mb-3 bg-white">
+        <div class = "order-card-header">
+          <h3 class = "py-2 m-0 px-2 text-white">Order Id: #2983</h3>
+        </div>
+        <div class = "order-card-body p-2">
+          <div class = "card-order-data my-2 ml-1">
+            <p class="m-0 text-muted">Order Date: 30.06.2021</p>
+          </div>
+          <div class = "card-order-total my-2 ml-1">
+            <p class="m-0 text-muted">Total : £108.00</p>
+          </div>
+        </div>
+        <div class = "order-card-footer d-flex px-2 py-2 flex-nowrap justify-content-start justify-content-md-start">
+          <a href="#" class="btn text-muted text-center "><i class="bi bi-credit-card text-muted pr-2"></i>Pay Now</a>
+          <a href="#" class="btn text-muted text-center"><i class="bi bi-eye text-muted pr-2"></i>View</a>
+          <a href="#" class="btn  text-muted"><i class="bi bi-file-earmark-arrow-down text-muted pr-2"></i>Download</a>
+          <a href="#" class="btn text-muted"><i class="bi bi-arrow-counterclockwise text-muted pr-2"></i>Order Again</a>
+
+        </div>
+      </div>
+      <div class = "order-card mb-3 bg-white">
+        <div class = "order-card-header">
+          <h3 class = "py-2 m-0 px-2 text-white">Order Id: #2983</h3>
+        </div>
+        <div class = "order-card-body p-2">
+          <div class = "card-order-data my-2 ml-1">
+            <p class="m-0 text-muted">Order Date: 30.06.2021</p>
+          </div>
+          <div class = "card-order-total my-2 ml-1">
+            <p class="m-0 text-muted">Total : £108.00</p>
+          </div>
+        </div>
+        <div class = "order-card-footer d-flex px-2 py-2 flex-nowrap justify-content-start justify-content-md-start">
+          <a href="#" class="btn text-muted text-center "><i class="bi bi-credit-card text-muted pr-2"></i>Pay Now</a>
+          <a href="#" class="btn text-muted text-center"><i class="bi bi-eye text-muted pr-2"></i>View</a>
+          <a href="#" class="btn  text-muted"><i class="bi bi-file-earmark-arrow-down text-muted pr-2"></i>Download</a>
+          <a href="#" class="btn text-muted"><i class="bi bi-arrow-counterclockwise text-muted pr-2"></i>Order Again</a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ************ Content End ************ -->
+
+</div>
+
+<footer id = "footer" style = "height: 500px;">
+
+</footer>
+
+
+<script src = "../../../dist/main/main.js"></script>
+
+
+</body>
+
+</html>

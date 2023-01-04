@@ -1,0 +1,18 @@
+.blog-post {
+  .blog-post-title {
+    background : rgba($primary, 0.7);
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0 2px 8px 0 rgba($primary,0.5);
+
+    h1 {
+      font-size: clamp(22px, 4vw, 32px);
+      color     : white;
+    }
+  }
+
+  .blog-post-image {
+    img {
+      width: 800px;
+    }
+  }
+}

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <title>Default Page Content</title>
+  <meta name = "author" content = "Musa Yazlık">
+  <meta name = "description" content = "">
+  <meta name = "keywords" content = "">
+  <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+  <meta charset = "UTF-8">
+  <!-- Google Font -->
+  <link rel = "preconnect" href = "https://fonts.gstatic.com">
+  <link href = "https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap" rel = "stylesheet">
+  <link rel = "stylesheet" href = "../../../dist/main/main.css">
+  <style>
+
+  </style>
+</head>
+<body class = "">
+<header id = "header"></header>
+<div class = "wrapper-area d-flex ">
+  <section id = "sidebar" class = "d-flex position-relative min-vh-100">
+  </section>
+  <!-- ************ Content Start ************ -->
+  <div class = "container-fluid px-3 pt-2 pb-4">
+    <div class = "content-header py-2 pl-3 pr-2  mt-3 rounded-sm d-flex justify-content-between">
+      <h2 class = "m-0 text-white ">Profile</h2>
+    </div>
+    <div class = "content-body min-vh-100 rounded-sm mt-3">
+
+      <div class = "profile-content">
+
+        <ul class = "profile-content-menu nav nav-tabs rounded-top d-flex flex-nowrap text-nowrap overflow-auto" id = "profileTab" role = "tablist">
+          <li class = "nav-item " role = "presentation">
+            <a class = "nav-link active rounded-0"
+               id = "home-tab"
+               data-toggle = "tab"
+               href = "#home"
+               role = "tab"
+               aria-controls = "home"
+               aria-selected = "true">Profile</a>
+          </li>
+          <li class = "nav-item" role = "presentation">
+            <a class = "nav-link rounded-0"
+               id = "profile-tab"
+               data-toggle = "tab"
+               href = "#profile"
+               role = "tab"
+               aria-controls = "profile"
+               aria-selected = "false">Address</a>
+          </li>
+          <li class = "nav-item" role = "presentation">
+            <a class = "nav-link rounded-0"
+               id = "contact-tab"
+               data-toggle = "tab"
+               href = "#contact"
+               role = "tab"
+               aria-controls = "contact"
+               aria-selected = "false">Reset Password</a>
+          </li>
+        </ul>
+        <div class = "tab-content" id = "ProfileContent">
+          <div class = "tab-pane fade show active" id = "home" role = "tabpanel" aria-labelledby = "home-tab">
+            <div class = "profile-img-area my-4 ml-4 ">
+              <div id = "profile-container" class = "position-relative shadow">
+                <img id = "profileImage"
+                     class = "img-thumbnail rounded-circle "
+                     src = "http://via.placeholder.com/150" />
+                <span class = "position-absolute justify-content-center d-flex align-items-center"><i style = " font-size: 40px"
+                                                                                                      class = "bi bi-camera text-white"></i></span>
+              </div>
+              <input id = "imageUpload" type = "file"
+                     name = "profile_photo" placeholder = "Photo" required = "" capture>
+            </div>
+            <div class = "clearfix"></div>
+            <div class = " mx-3">
+              <form>
+                <div class = "row">
+                  <div class = "col-md-6">
+                    <div class = "form-group">
+                      <label for = "AccountNumber">Account Number</label>
+                      <input type = "text"
+                             class = "form-control rounded-0 text-muted "
+                             value = "123456"
+                             id = "AccountNumber"
+                             disabled>
+                    </div>
+
+                    <div class = "form-group">
+                      <label for = "FullName">Full Name</label>
+                      <input type = "text" class = "form-control rounded-0 text-muted " id = "FullName">
+                    </div>
+
+                    <div class = "form-group">
+                      <label for = "E-mail">E-mail</label>
+                      <input type = "email" class = "form-control rounded-0 text-muted " id = "E-mail">
+                    </div>
+
+
+                    <div class = "form-group">
+                      <label for = "Phone">Phone</label>
+                      <input type = "text" class = "form-control rounded-0 text-muted " id = "Phone">
+                    </div>
+
+                    <div class = "form-group">
+                      <label for = "Bio">Bio</label>
+                      <textarea class = "form-control text-muted rounded-0" id = "Bio" rows = "6"></textarea>
+                    </div>
+
+
+                    <div class = "save-button">
+                      <button type = "button" name = "save" class = "btn btn-success rounded-0 px-5 mb-3">Save</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class = "tab-pane fade" id = "profile" role = "tabpanel" aria-labelledby = "profile-tab">
+
+            <div class = "container-fluid">
+              <div class = "row">
+                <div class = "col-12 col-md-10 col-lg-8 col-xl-6">
+                  <form action = "" class = "mt-5">
+                    <div class = "address-item mt-4 bg-light px-4 py-4">
+                      <div class = "form-group">
+                        <label for = "Address">Address</label>
+                        <textarea class = "form-control text-muted rounded-0" id = "Address" rows = "6"></textarea>
+                      </div>
+                      <div class = "form-group">
+                        <label for = "Town">Town</label>
+                        <input type = "text" class = "form-control rounded-0 text-muted " id = "Town">
+                      </div>
+                      <div class = "form-group">
+                        <label for = "County">County</label>
+                        <input type = "text" class = "form-control rounded-0 text-muted " id = "County">
+                      </div>
+                      <div class = "form-group">
+                        <label for = "PostalCode">Postal Code</label>
+                        <input type = "number" class = "form-control rounded-0 text-muted " id = "PostalCode">
+                      </div>
+                      <div class = "form-group">
+                        <label for = "Country">Country</label>
+                        <select class = "form-control selectpicker"
+                                data-style = "btn-info"
+                                id = "Country"
+                                data-live-search = "true">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class = "address-item mt-4 bg-light px-4 py-4">
+                      <div class = "form-group">
+                        <label for = "Address">Address</label>
+                        <textarea class = "form-control text-muted rounded-0" id = "Address" rows = "6"></textarea>
+                      </div>
+                      <div class = "form-group">
+                        <label for = "Town">Town</label>
+                        <input type = "text" class = "form-control rounded-0 text-muted " id = "Town">
+                      </div>
+                      <div class = "form-group">
+                        <label for = "County">County</label>
+                        <input type = "text" class = "form-control rounded-0 text-muted " id = "County">
+                      </div>
+                      <div class = "form-group">
+                        <label for = "PostalCode">Postal Code</label>
+                        <input type = "number" class = "form-control rounded-0 text-muted " id = "PostalCode">
+                      </div>
+                      <div class = "form-group">
+                        <label for = "Country">Country</label>
+                        <select class = "form-control selectpicker"
+                                data-style = "btn-info"
+                                id = "Country"
+                                data-live-search = "true">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>
+                      </div>
+                      <div class="deleteItem">
+                        <button class="btn btn-danger rounded-0">Delete</button>
+                      </div>
+                    </div>
+                    <div class="col-12 pl-0">
+                      <div class="addAddressItem mt-3 mb-3">
+                        <button class="btn btn-warning rounded-0 text-white"><i class="bi bi-plus-circle-dotted text-white mr-2"></i>Add New Additional Delivery Address</button>
+                      </div>
+                    </div>
+                    <div class = "d-flex justify-content-center">
+                      <div class = "save-button mt-3">
+                        <button type = "button" name = "save" class = "btn btn-success rounded-0 px-5 mb-3">Save
+                        </button>
+                      </div>
+                      <div class = "delete-button mt-3 ml-3">
+                        <button type = "button" name = "delete" class = "btn btn-outline-danger rounded-0 px-5 mb-3">Delete
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+
+
+            </div>
+
+
+          </div>
+          <div class = "tab-pane fade pt-5 px-3" id = "contact" role = "tabpanel" aria-labelledby = "contact-tab">
+
+            <form>
+              <div class = "row">
+                <div class = "col-md-6">
+                  <div class = "form-group">
+                    <label for = "CurrentPassword">Current Password</label>
+                    <input type = "text" class = "form-control rounded-0" id = "CurrentPassword">
+                  </div>
+                  <div class = "form-group">
+                    <label for = "NewPassword">New Password</label>
+                    <input type = "text" class = "form-control rounded-0" id = "NewPassword">
+                  </div>
+                  <div class = "form-group">
+                    <label for = "ConfirmPassword">Confirm Password</label>
+                    <input type = "text" class = "form-control rounded-0" id = "ConfirmPassword">
+                  </div>
+                  <div class = "save-button">
+                    <button type = "button" name = "save" class = "btn btn-success rounded-0 px-5 ">Save</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+
+
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+
+
+  </div>
+  <!-- ************ Content End ************ -->
+</div>
+<footer id = "footer" style = "height: 500px;"></footer>
+<script src = "../../../dist/main/main.js"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,51 @@
+.content-body {
+  .special-card-header {
+    .special-cart-title {
+      h3 {
+        font-size : 18px;
+      }
+    }
+  }
+
+  .special-cart-button {
+    a {
+      font-size : 18px;
+
+      &:hover {
+        color : white !important;
+      }
+
+      &:hover i {
+        color      : white;
+        transition : color 0.15s ease-in-out;
+      }
+
+      i {
+        color      : #17A2B8;
+        transition : color 0.15s ease-in-out;
+        font-size  : 18px;
+      }
+    }
+  }
+
+  .special-products-card-area {
+    .card {
+      transition : 0.2s;
+
+      &:hover {
+        transform : scale(1.02);
+      }
+    }
+
+    .row {
+      align-items : stretch;
+    }
+  }
+
+  .special-card-img {
+    img {
+      width  : 160px;
+      height : 160px;
+    }
+  }
+}

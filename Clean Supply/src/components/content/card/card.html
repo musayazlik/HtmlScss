@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <title>Card Page Component</title>
+  <meta name = "author" content = "Musa Yazlık">
+  <meta name = "description" content = "">
+  <meta name = "keywords" content = "">
+  <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+  <meta charset = "UTF-8">
+  <!-- Google Font -->
+  <link rel = "preconnect" href = "https://fonts.gstatic.com">
+  <link href = "https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap" rel = "stylesheet">
+  <link rel = "stylesheet" href = "../../../../dist/main/main.css">
+</head>
+<body class = "">
+<header id = "header"></header>
+<div class = "wrapper-area d-flex ">
+  <section id = "sidebar" class = "d-flex position-relative min-vh-100">
+  </section>
+  <!-- ************ Content Start ************ -->
+  <div class = "container-fluid px-3 pt-2 pb-4">
+    <div class = "content-header py-2 pl-3 pr-2  mt-3 rounded-sm d-flex justify-content-between">
+      <h2 class = "m-0 text-white d-flex align-items-center">Card Page Component</h2>
+    </div>
+    <div class = "content-body min-vh-100 rounded-sm py-3  mt-3">
+      <div class = "container-fluid">
+        <div class = "card-items row view-group justify-content-between justify-content-lg-start">
+          <form method = "GET" enctype = "" class = "p-3 w-100">
+            <div class = "d-flex flex-row-reverse product-view-toggle"
+                 data-list-option-field = "favorite_card_list_option">
+              <div class = "btn-group btn-group-toggle" data-toggle = "buttons">
+                <div class = "btn-group btn-group-toggle mb-3" data-toggle = "buttons">
+                  <a href = "#" class = "btn btn-info active" id = "grid" data-list-option = "card">
+                    <i style = "font-size: 18px;" class = "bi bi-grid-3x3-gap text-white"></i>
+                  </a>
+                  <a href = "#" class = "btn btn-info" id = "list" data-list-option = "list">
+                    <i style = "font-size: 18px;" class = "bi bi-view-list text-white"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class = "row">
+              <div class = "item col-12 col-sm-6 col-lg-4 col-xl-3 d-flex flex-column align-self-auto grid-group-item">
+                <div class = "thumbnail card position-relative shadow-sm">
+                  <div class = "favourites position-absolute">
+                    <i class = "bi bi-heart-fill text-muted "></i>
+                  </div>
+                  <div class = "img-event text-center d-flex justify-content-center align-items-center p-2">
+                    <img class = "group list-group-image img-fluid img-thumbnail border-0 shadow-sm "
+                         src = "http://placehold.it/200"
+                         alt = ""/>
+                  </div>
+                  <div class = "caption px-3 d-flex flex-column justify-content-between h-100">
+                    <h4 class = "group card-title inner list-group-item-heading text-muted text-center mb-4 mt-2">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+                    <div class = "">
+                      <div class = "price d-flex flex-column align-items-center mb-3">
+                        <p class = "m-0 text-muted">List Price : £27.21</p>
+                        <p class = "m-0 text-warning font-weight-bold">My Price: £ 27.21</p>
+                      </div>
+                      <div class = "multi-product-add group inner list-group-item-text mb-4">
+                        <div class = "row row-cols-2 row-cols-md-2">
+                          <div class = "col mb-3 text-right">
+                            <button class = "btn btn-outline-info w-100 rounded-0 ">3+ :£26.67</button>
+                          </div>
+                          <div class = "col mb-3 text-left">
+                            <button class = "btn btn-outline-info w-100 rounded-0">5+ :£26.12</button>
+                          </div>
+                          <div class = "col mb-3 text-right">
+                            <button class = "btn btn-outline-info w-100 rounded-0">10+ :£25.07</button>
+                          </div>
+                          <div class = "col mb-3 text-left">
+                            <button class = "btn btn-outline-info w-100 rounded-0">20+ :£24.03</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class = "mx-auto px-0 ">
+                      <div class = "input-group mb-4 mx-auto">
+                        <input style = "border-radius: 0;" type = "number"
+                               min = "1"
+                               class = "form-control">
+                        <div class = "input-group-append">
+                          <button class = "btn btn-outline-secondary rounded-0" type = "button">
+                            <i class = "bi bi-cart-plus"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class = "item col-12 col-sm-6 col-lg-4 col-xl-3 d-flex flex-column align-self-auto grid-group-item">
+                <div class = "thumbnail card position-relative shadow-sm">
+                  <div class = "favourites position-absolute">
+                    <i class = "bi bi-heart-fill text-muted "></i>
+                  </div>
+                  <div class = "img-event text-center d-flex justify-content-center align-items-center p-2">
+                    <img class = "group list-group-image img-fluid img-thumbnail border-0 shadow-sm "
+                         src = "http://placehold.it/200"
+                         alt = ""/>
+                  </div>
+                  <div class = "caption px-3 d-flex flex-column justify-content-between h-100">
+                    <h4 class = "group card-title inner list-group-item-heading text-muted text-center mb-4 mt-2">
+                      Lorem ipsum dolor sit amet, consectedgrthyju tretrhytu retrethyt ewrgethryjtuy eretryjtuy
+                      rtrhyjtukykj retrhyjtuky tur adipisicing elit.</h4>
+                    <div class = "">
+                      <div class = "price d-flex flex-column align-items-center mb-3">
+                        <p class = "m-0 text-muted">List Price : £27.21</p>
+                        <p class = "m-0 text-warning font-weight-bold">My Price: £ 27.21</p>
+                      </div>
+                      <div class = "multi-product-add group inner list-group-item-text mb-4">
+                        <div class = "row row-cols-2 row-cols-md-2">
+                          <div class = "col mb-3 text-right">
+                            <button class = "btn btn-outline-info w-100 rounded-0 ">3+ :£26.67</button>
+                          </div>
+                          <div class = "col mb-3 text-left">
+                            <button class = "btn btn-outline-info w-100 rounded-0">5+ :£26.12</button>
+                          </div>
+                          <div class = "col mb-3 text-right">
+                            <button class = "btn btn-outline-info w-100 rounded-0">10+ :£25.07</button>
+                          </div>
+                          <div class = "col mb-3 text-left">
+                            <button class = "btn btn-outline-info w-100 rounded-0">20+ :£24.03</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class = "mx-auto px-0 ">
+                      <div class = "input-group mb-4 mx-auto">
+                        <input style = "border-radius: 0;" type = "number"
+                               min = "1"
+                               class = "form-control">
+                        <div class = "input-group-append">
+                          <button class = "btn btn-outline-secondary rounded-0" type = "button">
+                            <i class = "bi bi-cart-plus"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class = "item col-12 col-sm-6 col-lg-4 col-xl-3 d-flex flex-column align-self-auto grid-group-item">
+                <div class = "thumbnail card position-relative shadow-sm">
+                  <div class = "favourites position-absolute">
+                    <i class = "bi bi-heart-fill text-muted "></i>
+                  </div>
+                  <div class = "img-event text-center d-flex justify-content-center align-items-center p-2">
+                    <img class = "group list-group-image img-fluid img-thumbnail border-0 shadow-sm "
+                         src = "http://placehold.it/200"
+                         alt = ""/>
+                  </div>
+                  <div class = "caption px-3 d-flex flex-column justify-content-between h-100">
+                    <h4 class = "group card-title inner list-group-item-heading text-muted text-center mb-4 mt-2">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+                    <div class = "">
+                      <div class = "price d-flex flex-column align-items-center mb-3">
+                        <p class = "m-0 text-muted">List Price : £27.21</p>
+                        <p class = "m-0 text-warning font-weight-bold">My Price: £ 27.21</p>
+                      </div>
+                      <div class = "multi-product-add group inner list-group-item-text mb-4">
+                        <div class = "row row-cols-2 row-cols-md-2">
+                          <div class = "col mb-3 text-right">
+                            <button class = "btn btn-outline-info w-100 rounded-0 ">3+ :£26.67</button>
+                          </div>
+                          <div class = "col mb-3 text-left">
+                            <button class = "btn btn-outline-info w-100 rounded-0">5+ :£26.12</button>
+                          </div>
+                          <div class = "col mb-3 text-right">
+                            <button class = "btn btn-outline-info w-100 rounded-0">10+ :£25.07</button>
+                          </div>
+                          <div class = "col mb-3 text-left">
+                            <button class = "btn btn-outline-info w-100 rounded-0">20+ :£24.03</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class = "mx-auto px-0 ">
+                      <div class = "input-group mb-4 mx-auto">
+                        <input style = "border-radius: 0;" type = "number"
+                               min = "1"
+                               class = "form-control">
+                        <div class = "input-group-append">
+                          <button class = "btn btn-outline-secondary rounded-0" type = "button">
+                            <i class = "bi bi-cart-plus"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class = "item col-12 col-sm-6 col-lg-4 col-xl-3 d-flex flex-column align-self-auto grid-group-item">
+                <div class = "thumbnail card position-relative shadow-sm">
+                  <div class = "favourites position-absolute">
+                    <i class = "bi bi-heart-fill text-muted "></i>
+                  </div>
+                  <div class = "img-event text-center d-flex justify-content-center align-items-center p-2">
+                    <img class = "group list-group-image img-fluid img-thumbnail border-0 shadow-sm "
+                         src = "http://placehold.it/200"
+                         alt = ""/>
+                  </div>
+                  <div class = "caption px-3 d-flex flex-column justify-content-between h-100">
+                    <h4 class = "group card-title inner list-group-item-heading text-muted text-center mb-4 mt-2">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+                    <div class = "">
+                      <div class = "price d-flex flex-column align-items-center mb-3">
+                        <p class = "m-0 text-muted">List Price : £27.21</p>
+                        <p class = "m-0 text-warning font-weight-bold">My Price: £ 27.21</p>
+                      </div>
+                      <div class = "multi-product-add group inner list-group-item-text mb-4">
+                        <div class = "row row-cols-2 row-cols-md-2">
+                          <div class = "col mb-3 text-right">
+                            <button class = "btn btn-outline-info w-100 rounded-0 ">3+ :£26.67</button>
+                          </div>
+                          <div class = "col mb-3 text-left">
+                            <button class = "btn btn-outline-info w-100 rounded-0">5+ :£26.12</button>
+                          </div>
+                          <div class = "col mb-3 text-right">
+                            <button class = "btn btn-outline-info w-100 rounded-0">10+ :£25.07</button>
+                          </div>
+                          <div class = "col mb-3 text-left">
+                            <button class = "btn btn-outline-info w-100 rounded-0">20+ :£24.03</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class = "mx-auto px-0 ">
+                      <div class = "input-group mb-4 mx-auto">
+                        <input style = "border-radius: 0;" type = "number"
+                               min = "1"
+                               class = "form-control">
+                        <div class = "input-group-append">
+                          <button class = "btn btn-outline-secondary rounded-0" type = "button">
+                            <i class = "bi bi-cart-plus"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class = "item col-12 col-sm-6 col-lg-4 col-xl-3 d-flex flex-column align-self-auto grid-group-item">
+                <div class = "thumbnail card position-relative shadow-sm">
+                  <div class = "favourites position-absolute">
+                    <i class = "bi bi-heart-fill text-muted "></i>
+                  </div>
+                  <div class = "img-event text-center d-flex justify-content-center align-items-center p-2">
+                    <img class = "group list-group-image img-fluid img-thumbnail border-0 shadow-sm "
+                         src = "http://placehold.it/200"
+                         alt = ""/>
+                  </div>
+                  <div class = "caption px-3 d-flex flex-column justify-content-between h-100">
+                    <h4 class = "group card-title inner list-group-item-heading text-muted text-center mb-4 mt-2">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+                    <div class = "">
+                      <div class = "price d-flex flex-column align-items-center mb-3">
+                        <p class = "m-0 text-muted">List Price : £27.21</p>
+                        <p class = "m-0 text-warning font-weight-bold">My Price: £ 27.21</p>
+                      </div>
+                      <div class = "multi-product-add group inner list-group-item-text mb-4">
+                        <div class = "row row-cols-2 row-cols-md-2">
+                          <div class = "col mb-3 text-right">
+                            <button class = "btn btn-outline-info w-100 rounded-0 ">3+ :£26.67</button>
+                          </div>
+                          <div class = "col mb-3 text-left">
+                            <button class = "btn btn-outline-info w-100 rounded-0">5+ :£26.12</button>
+                          </div>
+                          <div class = "col mb-3 text-right">
+                            <button class = "btn btn-outline-info w-100 rounded-0">10+ :£25.07</button>
+                          </div>
+                          <div class = "col mb-3 text-left">
+                            <button class = "btn btn-outline-info w-100 rounded-0">20+ :£24.03</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class = "mx-auto px-0 ">
+                      <div class = "input-group mb-4 mx-auto">
+                        <input style = "border-radius: 0;" type = "number"
+                               min = "1"
+                               class = "form-control">
+                        <div class = "input-group-append">
+                          <button class = "btn btn-outline-secondary rounded-0" type = "button">
+                            <i class = "bi bi-cart-plus"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class = "item col-12 col-sm-6 col-lg-4 col-xl-3 d-flex flex-column align-self-auto grid-group-item">
+                <div class = "thumbnail card position-relative shadow-sm">
+                  <div class = "favourites position-absolute">
+                    <i class = "bi bi-heart-fill text-muted "></i>
+                  </div>
+                  <div class = "img-event text-center d-flex justify-content-center align-items-center p-2">
+                    <img class = "group list-group-image img-fluid img-thumbnail border-0 shadow-sm "
+                         src = "http://placehold.it/200"
+                         alt = ""/>
+                  </div>
+                  <div class = "caption px-3 d-flex flex-column justify-content-between h-100">
+                    <h4 class = "group card-title inner list-group-item-heading text-muted text-center mb-4 mt-2">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+                    <div class = "">
+                      <div class = "price d-flex flex-column align-items-center mb-3">
+                        <p class = "m-0 text-muted">List Price : £27.21</p>
+                        <p class = "m-0 text-warning font-weight-bold">My Price: £ 27.21</p>
+                      </div>
+                      <div class = "multi-product-add group inner list-group-item-text mb-4">
+                        <div class = "row row-cols-2 row-cols-md-2">
+                          <div class = "col mb-3 text-right">
+                            <button class = "btn btn-outline-info w-100 rounded-0 ">3+ :£26.67</button>
+                          </div>
+                          <div class = "col mb-3 text-left">
+                            <button class = "btn btn-outline-info w-100 rounded-0">5+ :£26.12</button>
+                          </div>
+                          <div class = "col mb-3 text-right">
+                            <button class = "btn btn-outline-info w-100 rounded-0">10+ :£25.07</button>
+                          </div>
+                          <div class = "col mb-3 text-left">
+                            <button class = "btn btn-outline-info w-100 rounded-0">20+ :£24.03</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class = "mx-auto px-0 ">
+                      <div class = "input-group mb-4 mx-auto">
+                        <input style = "border-radius: 0;" type = "number"
+                               min = "1"
+                               class = "form-control">
+                        <div class = "input-group-append">
+                          <button class = "btn btn-outline-secondary rounded-0" type = "button">
+                            <i class = "bi bi-cart-plus"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ************ Content End ************ -->
+</div>
+<footer id = "footer" style = "height: 500px;"></footer>
+<script src = "../../../../dist/main/main.js"></script>
+</body>
+</html>

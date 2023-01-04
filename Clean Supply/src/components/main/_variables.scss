@@ -1,0 +1,110 @@
+/***** Constant Variables Start *****/
+
+$primary                : #262D3D;
+$secondary              : #00838F;
+$bg-dark-color          : #262D3D;
+$app-bg-color           : #1E2431;
+$white                  : #FFF;
+$icon-color             : #E5E5E5;
+
+
+$gray-1                 : #CFCFCF;
+$gray-2                 : #EEE;
+
+/***** Constant Variables End *****/
+
+/* Footer Start */
+
+$f-text-color           : $white;
+$f-dark-color           : $primary;
+
+/* Footer End */
+
+
+/***** Variable Variables *****/
+
+/* Body */
+
+$body                   : #EAEDED;
+$body-dark              : rgba($primary, 0.90);
+
+/* Background */
+
+$bg-color               : $white;
+$bg-color-dark          : $primary;
+
+/* Text */
+
+$text-light             : $white;
+$text-dark              : $primary;
+$text-color-white       : #FFF;
+
+/* Border */
+
+$border-color           : $primary;
+$border-color-dark      : $white;
+
+/* Button */
+
+$button-text-color      : $white;
+$button-text-color-dark : $primary;
+$button-bg-color        : $primary;
+$button-bg-color-dark   : $white;
+
+/* Box-Shadow */
+
+$h-s-box-shadow         : 0 0 20px 0 rgba($primary, 0.2);
+$h-s-box-shadow-dark    : 0 0 20px 0 $primary;
+$default-shadow         : 0 0 10px 0 rgba($secondary, 0.7);
+
+$defaut-s-dark          : 25,29,29;
+$defaut-s               : 207,207,207;
+
+
+$hover-color-dark       : 33,38,50;
+$hover-color            : 207,207,207;
+
+
+// Main Light Theme Colors
+:root {
+  --body                 : #{$body};
+  --bg-color             : #{$bg-color};
+  --primary              : #{$primary};
+  --secondary            : #{$secondary};
+  --text-color           : #{$text-dark};
+  --text-color-white     : #{$text-color-white};
+  --border-color         : #{$border-color};
+  --button-bg-color-dark : #{$button-bg-color-dark};
+  --h-s-box-shadow       : #{$h-s-box-shadow};
+  --default-shadow       : #{$defaut-s};
+  --hover-color          : #{$hover-color};
+
+}
+
+// Main Dark Theme Colors
+.dark {
+  --body           : #{$body-dark};
+  --bg-color       : #{$primary};
+  --primary        : #{$primary};
+  --secondary      : #{$secondary};
+  --text-color     : #{$text-light};
+  --border-color   : #{$white};
+  --h-s-box-shadow : #{$h-s-box-shadow-dark};
+  --default-shadow : #{$defaut-s-dark};
+  --hover-color    : #{$hover-color-dark};
+}
+
+
+/* Other Colors Used */
+
+$red                    : #E74C3C;
+$green                  : #2ECC71;
+$yellow                 : #F1C40F;
+$blue                   : #3498DB;
+$purple                 : #9B59B6;
+$orange                 : #E67E22;
+
+
+
+
+

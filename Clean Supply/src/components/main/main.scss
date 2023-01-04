@@ -1,0 +1,50 @@
+@import "./variables";
+@import "../../../node_modules/daterangepicker/daterangepicker.css";
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../../../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+@import "../header/header.scss";
+
+@import "../sidebar/sidebar.scss";
+@import "../footer/footer.scss";
+@import "./dark-mode.scss";
+@import "../content/default-page-content/default-page-content";
+@import "../../pages/mainpage/mainpage.scss";
+@import "../../pages/my-orders/my-orders";
+@import "../../pages/special-products/special-products";
+@import "../content/card/card";
+@import "../../pages/profile/profile";
+@import "../../../node_modules/bootstrap-select/dist/css/bootstrap-select.css";
+@import "../../pages/blog/blog";
+@import "../../pages/account/account";
+
+* {
+  font-family            : "Rubik", sans-serif;
+  font-weight            : 400;
+  box-sizing             : border-box;
+  font-variant-ligatures : no-common-ligatures !important;
+}
+
+body {
+  width      : 100%;
+  min-height : 100vh;
+  background : var(--body);
+}
+
+.btn.focus,
+.btn:focus,
+.form-control:focus {
+  box-shadow : none !important;
+  outline    : none !important;
+}
+
+a {
+  text-decoration : none !important;
+
+  &:hover {
+    color : $secondary !important;
+  }
+}
+
+.dropdown-toggle::after {
+  display : none;
+}

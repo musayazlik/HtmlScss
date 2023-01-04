@@ -1,0 +1,36 @@
+.content-header {
+  background : $secondary;
+
+  h2 {
+    font-size   : 28px;
+    font-weight : 500;
+  }
+}
+
+.content-body {
+  background : rgba($gray-1, 0.4);
+
+  .order-card {
+    border-radius : 4px;
+
+    h3 {
+      background    : rgba($primary, 0.8);
+      font-size     : 20px;
+      font-weight   : 400;
+      border-radius : 3px 3px 0 0;
+    }
+
+    .order-card-footer {
+      white-space: nowrap;
+      overflow: auto;
+      a {
+        &:hover i {
+          color : $secondary !important;
+        }
+      }
+    }
+  }
+}
+
+
+

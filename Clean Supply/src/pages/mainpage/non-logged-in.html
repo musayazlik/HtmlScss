@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+  <title>Non-Logged-in</title>
+  <meta name = "author" content = "Musa Yazlık">
+  <meta name = "description" content = "">
+  <meta name = "keywords" content = "">
+  <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+  <meta charset = "UTF-8">
+
+  <!-- Google Font -->
+  <link rel = "preconnect" href = "https://fonts.gstatic.com">
+  <link href = "https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap" rel = "stylesheet">
+
+  <link rel = "stylesheet" href = "../../../dist/main/main.css">
+
+</head>
+
+<body class = "">
+
+<div id = "theme-dark-mode" class = "dark-mode">
+  <i class = "bi bi-moon-stars text-white position-absolute"></i>
+  <i class = "bi bi-brightness-high text-white position-absolute invisible"></i>
+
+</div>
+
+<div class = "mobil-logo w-100 p-2  d-sm-none mx-auto d-flex justify-content-center align-items-center">
+  <img src = "../../assets/img/mobil-logo.svg" alt = "">
+</div>
+
+<header id = "header">
+  <div class = "container-fluid h-100">
+    <div class = "row align-items-center h-100">
+      <div class = "col-6 col-sm-8 col-md-4 col-lg-3">
+        <div class = "d-flex justify-content-start align-items-center ">
+          <button id = "menu-open" class = "menu-icon d-md-none d-flex justify-content-center align-items-center">
+            <i class = "bi bi-list"></i>
+          </button>
+          <div class = "logo d-none d-sm-inline-block ml-4">
+            <img src = "../../assets/img/logo.svg" alt = "Logo">
+          </div>
+        </div>
+      </div>
+      <div class = "col-8 col-md-6 col-lg-7 d-none d-md-flex justify-content-center justify-content-md-start justify-content-lg-center">
+        <div class = "search">
+          <div class = "dropdown d-flex flex-nowrap w-100 ">
+            <input class = "form-control" type = "search" placeholder = "Search" aria-label = "Search">
+            <button class = " search-input-button btn d-flex justify-content-center align-items-center"
+                    type = "button"
+                    data-toggle = "dropdown"
+                    data-display = "static"
+                    aria-haspopup = "true"
+                    aria-expanded = "false">
+              <i class = "bi bi-search"></i>
+            </button>
+
+            <div class = "header-search-dropdown-menu dropdown-menu dropdown-menu-lg-left">
+              <button class = "dropdown-item" type = "button">Action</button>
+              <button class = "dropdown-item" type = "button">Another action</button>
+              <button class = "dropdown-item" type = "button">Something else here</button>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class = "col-6 col-sm-4 col-md-2 col-lg-2">
+        <div class = "wrapper d-flex justify-content-center mr-3 mr-md-1">
+
+
+          <div id = "search-mobile-button" class = "search-button d-md-none">
+            <i class = "bi bi-search"></i>
+          </div>
+
+          <div class = "basket-blog mx-4 mt-1">
+            <div class = "blog d-flex">
+              <a href = "">Blog</a>
+            </div>
+            <div class = "basket flex-column position-relative d-none">
+              <div class = "dropdown d-flex justify-content-center align-items-center">
+                <a class = "dropdown-toggle position-relative" type = "button" id = "dropdownMenuButton"
+                   data-toggle = "dropdown">
+                  <i class = "bi bi-cart2"></i>
+                  <span class = "number-of-products position-absolute">9</span>
+                </a>
+
+                <div class = "dropdown-menu dropdown-menu-right mx-auto">
+                  <ul class = " navbar-nav basket-menu ">
+                    <div class = "total pl-4 py-3 d-flex align-items-center">
+                      <p class = "m-0">Total : £ <span>128.50</span></p>
+                    </div>
+                    <div class = "checkout d-flex pl-4 d-flex align-items-center">
+                      <p class = "m-0 d-flex align-items-center py-3">Checkout <i class = "icon-arrow-right"></i></p>
+                    </div>
+                    <div style = "height: 300px;" class = "overflow-auto">
+                      <li class = "nav-item d-flex  ">
+                        <div class = "basket-product-img  d-flex justify-content-center align-items-center">
+                          <img class = "shadow-sm img-thumbnail" src = "../../assets/img/avatar.jpg" alt = "">
+                        </div>
+                        <div class = "product-information pt-2">
+                          <h2 class = "title">PolyRoll - Christmas 40 Seasons Greetings Red & Silver</h2>
+                          <div class = "menstrual-information d-flex align-items-center">
+                            <label for = "" class = "mr-2 mb-0">
+                              <input type = "number" min = "0" max = "20" value = "1" readonly>
+                            </label>
+                            <button class = "edit d-flex justify-content-center align-items-center mr-2">
+                              <i class = "bi bi-pencil-square"></i></button>
+                            <button class = "remove d-flex justify-content-center align-items-center">
+                              <i class = "bi bi-x"></i></button>
+                          </div>
+                          <div class = "product-price my-1">
+                            <p class = "m-0"><b>£ 246.70</b></p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class = "nav-item d-flex">
+                        <div class = "basket-product-img  d-flex justify-content-center align-items-center">
+                          <img class = "shadow-sm img-thumbnail" src = "../../assets/img/avatar.jpg" alt = "">
+                        </div>
+                        <div class = "product-information pt-2">
+                          <h2 class = "title">PolyRoll - Christmas 40 Seasons Greetings Red & Silver</h2>
+                          <div class = "menstrual-information d-flex align-items-center">
+                            <label for = "" class = "mr-2 mb-0">
+                              <input type = "number" min = "0" max = "20" value = "1" readonly>
+                            </label>
+                            <button class = "edit d-flex justify-content-center align-items-center mr-2">
+                              <i class = "bi bi-pencil-square"></i></button>
+                            <button class = "remove d-flex justify-content-center align-items-center">
+                              <i class = "bi bi-x"></i></button>
+                          </div>
+                          <div class = "product-price my-1">
+                            <p class = "m-0"><b>£ 246.70</b></p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class = "nav-item d-flex">
+                        <div class = "basket-product-img  d-flex justify-content-center align-items-center">
+                          <img class = "shadow-sm img-thumbnail" src = "../../assets/img/avatar.jpg" alt = "">
+                        </div>
+                        <div class = "product-information pt-2">
+                          <h2 class = "title">PolyRoll - Christmas 40 Seasons Greetings Red & Silver</h2>
+                          <div class = "menstrual-information d-flex align-items-center">
+                            <label for = "" class = "mr-2 mb-0">
+                              <input type = "number" min = "0" max = "20" value = "1" readonly>
+                            </label>
+                            <button class = "edit d-flex justify-content-center align-items-center mr-2">
+                              <i class = "bi bi-pencil-square"></i></button>
+                            <button class = "remove d-flex justify-content-center align-items-center">
+                              <i class = "bi bi-x"></i></button>
+                          </div>
+                          <div class = "product-price my-1">
+                            <p class = "m-0"><b>£ 246.70</b></p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class = "nav-item d-flex">
+                        <div class = "basket-product-img  d-flex justify-content-center align-items-center">
+                          <img class = "shadow-sm img-thumbnail" src = "../../assets/img/avatar.jpg" alt = "">
+                        </div>
+                        <div class = "product-information pt-2">
+                          <h2 class = "title">PolyRoll - Christmas 40 Seasons Greetings Red & Silver</h2>
+                          <div class = "menstrual-information d-flex align-items-center">
+                            <label for = "" class = "mr-2 mb-0">
+                              <input type = "number" min = "0" max = "20" value = "1" readonly>
+                            </label>
+                            <button class = "edit d-flex justify-content-center align-items-center mr-2">
+                              <i class = "bi bi-pencil-square"></i></button>
+                            <button class = "remove d-flex justify-content-center align-items-center">
+                              <i class = "bi bi-x"></i></button>
+                          </div>
+                          <div class = "product-price my-1">
+                            <p class = "m-0"><b>£ 246.70</b></p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class = "nav-item d-flex">
+                        <div class = "basket-product-img  d-flex justify-content-center align-items-center">
+                          <img class = "shadow-sm img-thumbnail" src = "../../assets/img/avatar.jpg" alt = "">
+                        </div>
+                        <div class = "product-information pt-2">
+                          <h2 class = "title">PolyRoll - Christmas 40 Seasons Greetings Red & Silver</h2>
+                          <div class = "menstrual-information d-flex align-items-center">
+                            <label for = "" class = "mr-2 mb-0">
+                              <input type = "number" min = "0" max = "20" value = "1" readonly>
+                            </label>
+                            <button class = "edit d-flex justify-content-center align-items-center mr-2">
+                              <i class = "bi bi-pencil-square"></i></button>
+                            <button class = "remove d-flex justify-content-center align-items-center">
+                              <i class = "bi bi-x"></i></button>
+                          </div>
+                          <div class = "product-price my-1">
+                            <p class = "m-0"><b>£ 246.70</b></p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class = "nav-item d-flex">
+                        <div class = "basket-product-img  d-flex justify-content-center align-items-center">
+                          <img class = "shadow-sm img-thumbnail" src = "../../assets/img/avatar.jpg" alt = "">
+                        </div>
+                        <div class = "product-information pt-2">
+                          <h2 class = "title">PolyRoll - Christmas 40 Seasons Greetings Red & Silver</h2>
+                          <div class = "menstrual-information d-flex align-items-center">
+                            <label for = "" class = "mr-2 mb-0">
+                              <input type = "number" min = "0" max = "20" value = "1" readonly>
+                            </label>
+                            <button class = "edit d-flex justify-content-center align-items-center mr-2">
+                              <i class = "bi bi-pencil-square"></i></button>
+                            <button class = "remove d-flex justify-content-center align-items-center">
+                              <i class = "bi bi-x"></i></button>
+                          </div>
+                          <div class = "product-price my-1">
+                            <p class = "m-0"><b>£ 246.70</b></p>
+                          </div>
+                        </div>
+                      </li>
+                    </div>
+
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class = "user position-relative ">
+              <span class = "user-avatar d-flex justify-content-center rounded-circle align-items-center">
+                <i class = "bi bi-person "></i>
+                <img class = "rounded-circle d-none" src = "../../assets/img/avatar.jpg" alt = "">
+              </span>
+
+            <div class = "user-drop-menu position-absolute ">
+              <ul class = " navbar-nav user-menu px-3 py-2 ">
+                <a class = "nav-link " href = "">
+                  <li class = "nav-item d-flex align-items-center pl-3">
+                    <i class = "bi bi-box-arrow-right mr-2"></i>
+                    <p class = "m-0">Login</p>
+                  </li>
+                </a>
+                <div class = "languages d-flex justify-content-around mt-4 mb-3 my-2">
+                  <a href = "">
+                    <img src = "../../assets/img/english.png" alt = "">
+                  </a>
+                  <a href = "">
+                    <img src = "../../assets/img/turkish.png" alt = "">
+                  </a>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class = "mobile-search d-md-none">
+  <div class = "search">
+    <div class = "dropdown d-flex flex-nowrap w-100 ">
+      <input class = "form-control" type = "search" placeholder = "Search" aria-label = "Search">
+      <button class = "search-input-button btn d-flex justify-content-center align-items-center"
+              type = "button"
+              data-toggle = "dropdown"
+              data-display = "static"
+              aria-haspopup = "true"
+              aria-expanded = "false">
+        <i class = "bi bi-search"></i>
+      </button>
+
+      <div class = "header-search-dropdown-menu dropdown-menu dropdown-menu-left dropdown-menu-lg-left">
+        <button class = "dropdown-item" type = "button">Action</button>
+        <button class = "dropdown-item" type = "button">Another action</button>
+        <button class = "dropdown-item" type = "button">Something else here</button>
+      </div>
+
+
+    </div>
+  </div>
+</div>
+
+<div class = "wrapper-area d-flex ">
+
+
+  <section id = "sidebar" class = "d-flex position-relative">
+    <nav id = "nav-wrapper" class = "wrapper w-100">
+      <div id = "closes" class = "close mt-2 mr-2 d-block d-md-none ">
+        <svg xmlns = "http://www.w3.org/2000/svg" width = "32" height = "32" fill = "currentColor" class = "bi bi-x"
+             viewBox = "0 0 16 16">
+          <path
+            d = "M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+        </svg>
+      </div>
+
+      <div class = "pt-5 h-100" id = "navbarNav">
+        <ul class = "navbar-nav h-100 ">
+          <li class = "nav-item w-100 px-3 active">
+            <a class = "nav-link w-100 rounded d-flex align-items-center pl-2 " href = "#">
+              <i class="bi bi-house"></i>
+              <p class = "m-0">Dashboard</p>
+            </a>
+          </li>
+          <li class = "nav-item w-100 px-3 d-flex flex-column h-auto">
+            <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2 dropdown-toggle"
+               data-toggle = "collapse"
+               aria-expanded = "false"
+               aria-controls = "collapseExample"
+               href = "#categories-menu">
+              <div class = "menu-item-left d-flex align-items-center">
+                <i class = "bi bi-grid "></i>
+                <p class = "m-0">Categories</p>
+              </div>
+              <div class = "menu-item-right pr-2 ">
+                <i class = "bi bi-chevron-right"></i>
+              </div>
+            </a>
+
+            <ul class = "sub-menu pl-0 w-100 mt-2 collapse " id = "categories-menu">
+              <div class = "clearfix">
+                <li class = "nav-item d-flex flex-column h-100">
+                  <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                     data-toggle = "collapse"
+                     aria-expanded = "false"
+                     aria-controls = "collapseExample"
+                     href = "#sub-sub-menu-1">
+                    <div class = "menu-item-left d-flex align-items-center">
+                      <span></span>
+                      <p class = "m-0">Sub Menu</p>
+                    </div>
+                    <div class = "menu-item-right pr-2 ">
+                      <i class = "bi bi-chevron-right"></i>
+                    </div>
+
+                  </a>
+
+                  <ul class = "sub-sub-menu pl-2 w-100 mt-2 collapse " id = "sub-sub-menu-1">
+                    <li class = "nav-item d-flex flex-column active">
+                      <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                      >
+                        <div class = "menu-item-left d-flex align-items-center">
+
+                          <p class = "m-0">Sub-Sub Menu</p>
+                        </div>
+
+                      </a>
+                    </li>
+                    <li class = "nav-item d-flex flex-column">
+                      <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                      >
+                        <div class = "menu-item-left d-flex align-items-center">
+
+                          <p class = "m-0">Sub-Sub Menu</p>
+                        </div>
+
+                      </a>
+                    </li>
+                    <li class = "nav-item d-flex flex-column">
+                      <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                      >
+                        <div class = "menu-item-left d-flex align-items-center">
+
+                          <p class = "m-0">Sub-Sub Menu</p>
+                        </div>
+
+                      </a>
+                    </li>
+                    <li class = "nav-item d-flex flex-column">
+                      <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                      >
+                        <div class = "menu-item-left d-flex align-items-center">
+
+                          <p class = "m-0">Sub-Sub Menu</p>
+                        </div>
+
+                      </a>
+                    </li>
+                    <li class = "nav-item d-flex flex-column">
+                      <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                      >
+                        <div class = "menu-item-left d-flex align-items-center">
+
+                          <p class = "m-0">Sub-Sub Menu</p>
+                        </div>
+
+                      </a>
+                    </li>
+                    <li class = "nav-item d-flex flex-column">
+                      <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                      >
+                        <div class = "menu-item-left d-flex align-items-center">
+
+                          <p class = "m-0">Sub-Sub Menu</p>
+                        </div>
+
+                      </a>
+                    </li>
+                    <li class = "nav-item d-flex flex-column">
+                      <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                      >
+                        <div class = "menu-item-left d-flex align-items-center">
+
+                          <p class = "m-0">Sub-Sub Menu</p>
+                        </div>
+
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class = "nav-item d-flex flex-column h-100">
+                  <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                     data-toggle = "collapse"
+                     aria-expanded = "false"
+                     aria-controls = "collapseExample"
+                     href = "#sub-sub-menu-2">
+                    <div class = "menu-item-left d-flex align-items-center">
+                      <span></span>
+                      <p class = "m-0">Sub Menu</p>
+                    </div>
+                    <div class = "menu-item-right pr-2 ">
+                      <i class = "bi bi-chevron-right"></i>
+                    </div>
+
+                  </a>
+
+                  <ul class = "sub-sub-menu pl-2 w-100 mt-2 collapse " id = "sub-sub-menu-2">
+                    <li class = "nav-item d-flex flex-column ">
+                      <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                      >
+                        <div class = "menu-item-left d-flex align-items-center">
+
+                          <p class = "m-0">Sub-Sub Menu</p>
+                        </div>
+
+                      </a>
+                    </li>
+                    <li class = "nav-item d-flex flex-column">
+                      <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                      >
+                        <div class = "menu-item-left d-flex align-items-center">
+
+                          <p class = "m-0">Sub-Sub Menu</p>
+                        </div>
+
+                      </a>
+                    </li>
+                    <li class = "nav-item d-flex flex-column">
+                      <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                      >
+                        <div class = "menu-item-left d-flex align-items-center">
+
+                          <p class = "m-0">Sub-Sub Menu</p>
+                        </div>
+
+                      </a>
+                    </li>
+                    <li class = "nav-item d-flex flex-column">
+                      <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                      >
+                        <div class = "menu-item-left d-flex align-items-center">
+
+                          <p class = "m-0">Sub-Sub Menu</p>
+                        </div>
+
+                      </a>
+                    </li>
+                    <li class = "nav-item d-flex flex-column">
+                      <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                      >
+                        <div class = "menu-item-left d-flex align-items-center">
+
+                          <p class = "m-0">Sub-Sub Menu</p>
+                        </div>
+
+                      </a>
+                    </li>
+                    <li class = "nav-item d-flex flex-column">
+                      <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                      >
+                        <div class = "menu-item-left d-flex align-items-center">
+
+                          <p class = "m-0">Sub-Sub Menu</p>
+                        </div>
+
+                      </a>
+                    </li>
+                    <li class = "nav-item d-flex flex-column">
+                      <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                      >
+                        <div class = "menu-item-left d-flex align-items-center">
+
+                          <p class = "m-0">Sub-Sub Menu</p>
+                        </div>
+
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class = "nav-item d-flex flex-column h-100">
+                  <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                     data-toggle = "collapse"
+                     aria-expanded = "false"
+                     aria-controls = "collapseExample"
+                     href = "#sub-sub-menu-3">
+                    <div class = "menu-item-left d-flex align-items-center">
+                      <span></span>
+                      <p class = "m-0">Sub Menu</p>
+                    </div>
+                    <div class = "menu-item-right pr-2 ">
+                      <i class = "bi bi-chevron-right"></i>
+                    </div>
+
+                  </a>
+
+                  <ul class = "sub-sub-menu pl-2 w-100 mt-2 collapse " id = "sub-sub-menu-3">
+                    <li class = "nav-item d-flex flex-column">
+                      <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                      >
+                        <div class = "menu-item-left d-flex align-items-center">
+
+                          <p class = "m-0">Sub-Sub Menu</p>
+                        </div>
+
+                      </a>
+                    </li>
+                    <li class = "nav-item d-flex flex-column">
+                      <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                      >
+                        <div class = "menu-item-left d-flex align-items-center">
+
+                          <p class = "m-0">Sub-Sub Menu</p>
+                        </div>
+
+                      </a>
+                    </li>
+                    <li class = "nav-item d-flex flex-column">
+                      <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                      >
+                        <div class = "menu-item-left d-flex align-items-center">
+
+                          <p class = "m-0">Sub-Sub Menu</p>
+                        </div>
+
+                      </a>
+                    </li>
+                    <li class = "nav-item d-flex flex-column">
+                      <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                      >
+                        <div class = "menu-item-left d-flex align-items-center">
+
+                          <p class = "m-0">Sub-Sub Menu</p>
+                        </div>
+
+                      </a>
+                    </li>
+                    <li class = "nav-item d-flex flex-column">
+                      <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                      >
+                        <div class = "menu-item-left d-flex align-items-center">
+
+                          <p class = "m-0">Sub-Sub Menu</p>
+                        </div>
+
+                      </a>
+                    </li>
+                    <li class = "nav-item d-flex flex-column">
+                      <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                      >
+                        <div class = "menu-item-left d-flex align-items-center">
+
+                          <p class = "m-0">Sub-Sub Menu</p>
+                        </div>
+
+                      </a>
+                    </li>
+                    <li class = "nav-item d-flex flex-column">
+                      <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                      >
+                        <div class = "menu-item-left d-flex align-items-center">
+
+                          <p class = "m-0">Sub-Sub Menu</p>
+                        </div>
+
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class = "nav-item d-flex flex-column h-100">
+                  <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                     data-toggle = "collapse"
+                     aria-expanded = "false"
+                     aria-controls = "collapseExample"
+                     href = "#sub-sub-menu-4">
+                    <div class = "menu-item-left d-flex align-items-center">
+                      <span></span>
+                      <p class = "m-0">Sub Menu</p>
+                    </div>
+                    <div class = "menu-item-right pr-2 ">
+                      <i class = "bi bi-chevron-right"></i>
+                    </div>
+
+                  </a>
+
+                  <ul class = "sub-sub-menu pl-2 w-100 mt-2 collapse " id = "sub-sub-menu-4">
+                    <li class = "nav-item d-flex flex-column">
+                      <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                      >
+                        <div class = "menu-item-left d-flex align-items-center">
+
+                          <p class = "m-0">Sub-Sub Menu</p>
+                        </div>
+
+                      </a>
+                    </li>
+                    <li class = "nav-item d-flex flex-column">
+                      <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                      >
+                        <div class = "menu-item-left d-flex align-items-center">
+
+                          <p class = "m-0">Sub-Sub Menu</p>
+                        </div>
+
+                      </a>
+                    </li>
+                    <li class = "nav-item d-flex flex-column">
+                      <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                      >
+                        <div class = "menu-item-left d-flex align-items-center">
+
+                          <p class = "m-0">Sub-Sub Menu</p>
+                        </div>
+
+                      </a>
+                    </li>
+                    <li class = "nav-item d-flex flex-column">
+                      <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                      >
+                        <div class = "menu-item-left d-flex align-items-center">
+
+                          <p class = "m-0">Sub-Sub Menu</p>
+                        </div>
+
+                      </a>
+                    </li>
+                    <li class = "nav-item d-flex flex-column">
+                      <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                      >
+                        <div class = "menu-item-left d-flex align-items-center">
+
+                          <p class = "m-0">Sub-Sub Menu</p>
+                        </div>
+
+                      </a>
+                    </li>
+                    <li class = "nav-item d-flex flex-column">
+                      <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                      >
+                        <div class = "menu-item-left d-flex align-items-center">
+
+                          <p class = "m-0">Sub-Sub Menu</p>
+                        </div>
+
+                      </a>
+                    </li>
+                    <li class = "nav-item d-flex flex-column">
+                      <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                      >
+                        <div class = "menu-item-left d-flex align-items-center">
+
+                          <p class = "m-0">Sub-Sub Menu</p>
+                        </div>
+
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class = "nav-item d-flex flex-column h-100">
+                  <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                     data-toggle = "collapse"
+                     aria-expanded = "false"
+                     aria-controls = "collapseExample"
+                     href = "#sub-sub-menu-5">
+                    <div class = "menu-item-left d-flex align-items-center">
+                      <span></span>
+                      <p class = "m-0">Sub Menu</p>
+                    </div>
+                    <div class = "menu-item-right pr-2 ">
+                      <i class = "bi bi-chevron-right"></i>
+                    </div>
+
+                  </a>
+
+                  <ul class = "sub-sub-menu pl-2 w-100 mt-2 collapse " id = "sub-sub-menu-5">
+                    <li class = "nav-item d-flex flex-column">
+                      <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                      >
+                        <div class = "menu-item-left d-flex align-items-center">
+
+                          <p class = "m-0">Sub-Sub Menu</p>
+                        </div>
+
+                      </a>
+                    </li>
+                    <li class = "nav-item d-flex flex-column">
+                      <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                      >
+                        <div class = "menu-item-left d-flex align-items-center">
+
+                          <p class = "m-0">Sub-Sub Menu</p>
+                        </div>
+
+                      </a>
+                    </li>
+                    <li class = "nav-item d-flex flex-column">
+                      <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                      >
+                        <div class = "menu-item-left d-flex align-items-center">
+
+                          <p class = "m-0">Sub-Sub Menu</p>
+                        </div>
+
+                      </a>
+                    </li>
+                    <li class = "nav-item d-flex flex-column">
+                      <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                      >
+                        <div class = "menu-item-left d-flex align-items-center">
+
+                          <p class = "m-0">Sub-Sub Menu</p>
+                        </div>
+
+                      </a>
+                    </li>
+                    <li class = "nav-item d-flex flex-column">
+                      <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                      >
+                        <div class = "menu-item-left d-flex align-items-center">
+
+                          <p class = "m-0">Sub-Sub Menu</p>
+                        </div>
+
+                      </a>
+                    </li>
+                    <li class = "nav-item d-flex flex-column">
+                      <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                      >
+                        <div class = "menu-item-left d-flex align-items-center">
+
+                          <p class = "m-0">Sub-Sub Menu</p>
+                        </div>
+
+                      </a>
+                    </li>
+                    <li class = "nav-item d-flex flex-column">
+                      <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                      >
+                        <div class = "menu-item-left d-flex align-items-center">
+
+                          <p class = "m-0">Sub-Sub Menu</p>
+                        </div>
+
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class = "nav-item d-flex flex-column h-100">
+                  <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                     data-toggle = "collapse"
+                     aria-expanded = "false"
+                     aria-controls = "collapseExample"
+                     href = "#">
+                    <div class = "menu-item-left d-flex align-items-center">
+                      <span></span>
+                      <p class = "m-0">Sub Menu</p>
+                    </div>
+                    <div class = "menu-item-right pr-2  d-none">
+                      <i class = "icon-arrow-right"></i>
+                    </div>
+                  </a>
+                </li>
+              </div>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </section>
+
+
+  <div id = "content" style = "z-index: 0;">
+
+    <div class = "main-page-top mb-2">
+
+      <!-- Slider main container -->
+      <div id = "content-top-swiper" class = "swiper-container"
+      data-speed="2000" data-loop="true" data-autoplay='{"delay": 2000}'
+      >
+        <div class = "swiper-wrapper">
+          <a href = "#"
+             class = "swiper-slide">
+            <img src = "../../assets/img/content.png" class = "img-fluid " alt = "">
+          </a>
+          <a href = "#"
+             class = "swiper-slide">
+            <img src = "../../assets/img/content.png" class = "img-fluid " alt = "">
+          </a>
+          <a href = "#"
+             class = "swiper-slide">
+            <img src = "../../assets/img/content.png" class = "img-fluid " alt = "">
+          </a>
+          <a href = "#"
+             class = "swiper-slide">
+            <img src = "../../assets/img/content.png" class = "img-fluid " alt = "">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div style = "z-index: 1" class = "position-relative" id = "mainpage-cardui">
+      <div class = "container-fluid">
+        <div class = "row">
+          <div class = "col-12 col-lg-12 d-flex justify-content-center w-100 mb-5 mb-lg-0">
+            <div style="max-width: 992px;" class = "mainpage-cardui-1 w-100 mx-2 mx-lg-3">
+              <div class = "container-fluid">
+                <div class = "row justify-content-start align-items-center h-100">
+                  <div class = "col-6 col-sm-3 col-lg-3 col-md-6 p-0">
+                    <a href = "">
+                      <div class = "mainpage-cardui-card d-flex flex-column justify-content-around align-items-center">
+                        <div class = "icon d-flex justify-content-center align-items-center">
+                          <i class = "bi bi-journal-text"></i>
+
+                        </div>
+                        <span class = "cardui-card-text">Catalogue</span>
+
+                      </div>
+                    </a>
+                  </div>
+                  <div class = "col-6 col-sm-3 col-lg-3 col-md-6 p-0">
+                    <a href = "">
+                      <div class = "mainpage-cardui-card d-flex flex-column justify-content-around align-items-center">
+                        <div class = "icon d-flex justify-content-center align-items-center">
+                          <i class = "bi bi-receipt-cutoff"></i>
+                        </div>
+                        <span class = "cardui-card-text text-nowrap">All Products</span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class = "col-6 col-sm-3 col-lg-3 col-md-6 p-0">
+                    <a href = "">
+                      <div class = "mainpage-cardui-card d-flex flex-column justify-content-around align-items-center">
+                        <div class = "icon d-flex justify-content-center align-items-center">
+                          <i class = "bi bi-heart"></i>
+
+                        </div>
+                        <span class = "cardui-card-text">Favourites</span>
+
+                      </div>
+                    </a>
+                  </div>
+                  <div class = "col-6 col-sm-3 col-lg-3 col-md-6 p-0">
+                    <a href = "">
+                      <div class = "mainpage-cardui-card  d-flex flex-column justify-content-around align-items-center">
+                        <div class = "icon d-flex justify-content-center align-items-center">
+                          <i class = "bi bi-person"></i>
+
+                        </div>
+                        <span class = "cardui-card-text">Account</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div id = "content-mainpage-top-sellers" class = "mx-4 mb-5">
+      <h2>Top Sellers</h2>
+      <div class = "lunchbox">
+
+        <div id = "top-sellers" class = "swiper-container"
+        data-loop="true"
+        data-space-between="20"
+        data-ally="true"
+        data-keyboard-control="true"
+        data-grab-cursor="true"
+        data-breakpoints='{"0":{"slidesPerView": 1}, "568":{"slidesPerView": 2}, "992":{"slidesPerView": 3}, "1200":{"slidesPerView": 4}, "1500":{"slidesPerView": 5}}'
+        data-pagination='{"el":".swiper-pagination", "clickable":true}'
+        data-navigation='{"nextEl": "#js-next1", "prevEl": "#js-prev1"}'>
+
+          <div class = "swiper-wrapper">
+            <div class = "swiper-slide">
+              <div class = "swiper-card">
+                <div class = "swiper-card-img text-center mt-4">
+                  <img class = " img-thumbnail" src = "https://via.placeholder.com/120" alt = "">
+                </div>
+                <div class = "swiper-card-text px-3 py-3">
+                  <h3 class = "text-center">Perklone DX PLUS (2 x 5ltrs)HZ</h3>
+                  <p class = "m-0 text-center mt-4">List Price: £ 27.91</p>
+                </div>
+                <div class = "swiper-card-button d-flex justify-content-center mb-3">
+                  <a href = "#" type = "button" class = "btn btn-lg">View</a>
+                </div>
+              </div>
+            </div>
+            <div class = "swiper-slide">
+              <div class = "swiper-card">
+                <div class = "swiper-card-img text-center mt-4">
+                  <img class = " img-thumbnail" src = "https://via.placeholder.com/120" alt = "">
+                </div>
+                <div class = "swiper-card-text px-3 py-3">
+                  <h3 class = "text-center">Perklone DX PLUS (2 x 5ltrs)HZ</h3>
+                  <p class = "m-0 text-center mt-4">List Price: £ 27.91</p>
+                </div>
+                <div class = "swiper-card-button d-flex justify-content-center mb-3">
+                  <a href = "#" type = "button" class = "btn btn-lg">View</a>
+                </div>
+              </div>
+            </div>
+            <div class = "swiper-slide">
+              <div class = "swiper-card">
+                <div class = "swiper-card-img text-center mt-4">
+                  <img class = " img-thumbnail" src = "https://via.placeholder.com/120" alt = "">
+                </div>
+                <div class = "swiper-card-text px-3 py-3">
+                  <h3 class = "text-center">Perklone DX PLUS (2 x 5ltrs)HZ</h3>
+                  <p class = "m-0 text-center mt-4">List Price: £ 27.91</p>
+                </div>
+                <div class = "swiper-card-button d-flex justify-content-center mb-3">
+                  <a href = "#" type = "button" class = "btn btn-lg">View</a>
+                </div>
+              </div>
+            </div>
+            <div class = "swiper-slide">
+              <div class = "swiper-card">
+                <div class = "swiper-card-img text-center mt-4">
+                  <img class = " img-thumbnail" src = "https://via.placeholder.com/120" alt = "">
+                </div>
+                <div class = "swiper-card-text px-3 py-3">
+                  <h3 class = "text-center">Perklone DX PLUS (2 x 5ltrs)HZ</h3>
+                  <p class = "m-0 text-center mt-4">List Price: £ 27.91</p>
+                </div>
+                <div class = "swiper-card-button d-flex justify-content-center mb-3">
+                  <a href = "#" type = "button" class = "btn btn-lg">View</a>
+                </div>
+              </div>
+            </div>
+            <div class = "swiper-slide">
+              <div class = "swiper-card">
+                <div class = "swiper-card-img text-center mt-4">
+                  <img class = " img-thumbnail" src = "https://via.placeholder.com/120" alt = "">
+                </div>
+                <div class = "swiper-card-text px-3 py-3">
+                  <h3 class = "text-center">Perklone DX PLUS (2 x 5ltrs)HZ</h3>
+                  <p class = "m-0 text-center mt-4">List Price: £ 27.91</p>
+                </div>
+                <div class = "swiper-card-button d-flex justify-content-center mb-3">
+                  <a href = "#" type = "button" class = "btn btn-lg">View</a>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+          <!-- pagination -->
+          <div class = "swiper-pagination"></div>
+
+        </div>
+
+        <!-- navigation buttons -->
+        <div id = "js-prev1" class = "swiper-button-prev"></div>
+        <div id = "js-next1" class = "swiper-button-next"></div>
+
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<footer id = "footer">
+  <div class = "container-xl container-fluid">
+    <div class = "row">
+      <div class = "col-12 col-md-4">
+        <div class = "column-1 d-flex flex-column align-items-center">
+          <h3>Download Our App</h3>
+          <div class = "app-area">
+            <a href = "#">
+              <div class = "app-back google-play d-flex mb-5">
+                <img src = "../../assets/img/footer/google-app.png" alt = "">
+                <div class = "app-text d-flex flex-column justify-content-start">
+                  <p class = "m-0">GET IT ON</p>
+                  <b>Google Play</b>
+                </div>
+              </div>
+            </a>
+            <a href = "#">
+              <div class = "app-back apple-store d-flex">
+                <img src = "../../assets/img/footer/apple-app.png" alt = "">
+                <div class = "app-text d-flex flex-column justify-content-start">
+                  <p class = "m-0">GET IT ON</p>
+                  <b>App Store</b>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class = "col-12 col-md-4 my-5 my-md-0">
+
+        <div class = "column-2 h-100">
+          <ul class = "nav flex-column justify-content-center align-items-center align-items-md-start h-100">
+            <li class = "nav-item">
+              <a class = "nav-link" href = "#">Blog</a>
+            </li>
+            <li class = "nav-item">
+              <a class = "nav-link" href = "#">How to order</a>
+            </li>
+            <li class = "nav-item">
+              <a class = "nav-link" href = "#">Delivery information</a>
+            </li>
+            <li class = "nav-item">
+              <a class = "nav-link" href = "#">Terms and Conditions</a>
+            </li>
+            <li class = "nav-item">
+              <a class = "nav-link" href = "#">Card Payments</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class = "col-12 col-md-4">
+        <div class = "column-3">
+          <div class = "address mb-5 d-flex flex-column align-items-center align-items-md-start">
+            <h3>Address</h3>
+            <address class = "m-0">
+              <p class = "m-0">Clean Supply Ltd. 19 Merchant Drive, Mead Lane, Hertford, SG13 7AY.</p>
+            </address>
+          </div>
+          <div class = "phone mb-5 d-flex flex-column align-items-center align-items-md-start">
+            <h3>Phone</h3>
+            <div class = "d-flex">
+              <i class = "bi bi-telephone"></i>
+              <a href = "tel:05055555555">0505 555 55 55</a>
+            </div>
+          </div>
+          <div class = "e-mail d-flex flex-column align-items-center align-items-md-start ">
+            <h3>E-Mail</h3>
+            <div class = "d-flex align-items-center">
+              <i class = "bi bi-envelope"></i>
+              <a href = "mailto:example@example.com">example@example.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class = "col-12 mt-5 pt-4 pb-0 pb-md-2">
+      <div class = "copyright ml-md-4 d-flex justify-content-between">
+        <div class = "row justify-content-around w-100">
+          <div class = "col-12 col-md-9"><p class = "m-0 text-white text-center text-md-left"> ® Clean Supply All Rights
+                                                                                               Reserved.</p></div>
+          <div class = "col-12 col-md-3">
+            <div class = "social mb-3 ">
+          <span style = "width: 110px"
+                class = "d-flex mx-auto  mt-3 mt-md-0 justify-content-around justify-content-center">
+            <a href = ""><i class = "bi bi-facebook"></i></a>
+            <a href = ""><i class = "bi bi-twitter"></i></a>
+            <a href = ""><i class = "bi bi-instagram"></i></a>
+          </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class = "col-12">
+    <div class = "by-designer w-100 text-white text-center pb-2">
+      <p class = "m-0 text-white text-muted">By designer <span class = "ml-2"><i class = "bi bi-heart"></i></span><a
+        class = " text-muted"
+        href = "">ai-websolutions</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+
+<script src = "../../../dist/main/main.js"></script>
+</body>
+
+</html>

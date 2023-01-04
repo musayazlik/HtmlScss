@@ -1,0 +1,221 @@
+$theme-colors: (
+   "primary": #051350,
+   "secondary": #e87057,
+   "white-50": rgba(255, 255, 255, 0.5),
+   "gray": #e4e4e4,
+);
+$primary: #051350;
+$secondary: #e87057;
+$box-shadow-color: #030c34;
+$button-hover: #ffd70f;
+
+@import "../scss/bootstrap/bootstrap.scss";
+
+* {
+   font-family: "Rubik", sans-serif;
+   font-weight: 400;
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+/* Header Area  */
+
+header {
+   .navbar-light .navbar-toggler {
+      border: none;
+   }
+   nav {
+      box-shadow: 0 4px 20px rgba($box-shadow-color, 0.4);
+      padding: 12px 0px !important;
+
+      .dropdown {
+         .dropdown-menu {
+            width: 200px;
+            background: rgba(#030c34, 0.9);
+            box-shadow: 0 4px 16px 1px rgba($box-shadow-color, 0.35);
+            border: none;
+            padding: 0;
+            border-radius: 0;
+
+            .dropdown-item {
+               padding: 8px 16px;
+               &:not(:last-child) {
+                  margin-bottom: 8px;
+               }
+               &:hover {
+                  background: $secondary;
+               }
+            }
+         }
+      }
+
+      .collapse {
+         .navbar-nav {
+            .nav-item {
+               .nav-link {
+                  transition: color 0.2s ease;
+                  &:hover {
+                     color: $secondary !important;
+                  }
+               }
+            }
+         }
+      }
+   }
+
+   .logo {
+      width: 100px;
+   }
+
+   ul li a {
+      font-size: 16px;
+   }
+}
+
+/* Main  */
+
+.main {
+   height: calc(100vh - 74px);
+
+   h2 {
+      font-size: 28px;
+      line-height: 52px;
+   }
+}
+
+/* Our Services */
+
+.our-services {
+   margin: 250px 0 100px 0;
+
+   .our-desc {
+      font-size: 16px;
+      font-weight: 400px;
+      max-width: 900px;
+   }
+
+   .card {
+      box-shadow: 0 2px 18px 0.2px rgba(231, 231, 231, 0.5);
+      transition: 0.2s;
+      min-height: 450px;
+
+      &:hover {
+         transform: scale(1.03);
+         position: relative;
+         z-index: 2;
+         box-shadow: 0 3px 18px 0.2px rgba(231, 231, 231, 0.9);
+      }
+   }
+}
+
+/* Our Vehicles */
+
+.our-vehicles {
+   .card {
+      transition: 0.2s;
+      &:hover {
+         background: rgba($secondary, 0.8) !important;
+         transform: scale(1.03);
+      }
+   }
+
+   h2 {
+      font-size: clamp(24px, 10vw, 40px);
+   }
+}
+
+/* Our Projects */
+
+.our-projects {
+   margin: 80px 0;
+   h2 {
+      font-size: clamp(24px, 10vw, 40px);
+
+      span {
+         cursor: default;
+      }
+   }
+}
+
+/* Components   */
+
+.swiper-container {
+   padding-bottom: 40px;
+}
+
+.swiper-pagination-bullet-active {
+   background: $primary;
+}
+
+.button-custom {
+   background: none;
+   border: 0;
+   padding: 8px 18px;
+   box-shadow: inset 0 0 0 2px $secondary;
+   color: $secondary;
+   font-size: inherit;
+
+   position: relative;
+   vertical-align: middle;
+   transition: color 0.25s;
+   text-decoration: none !important;
+   span {
+      font-weight: 700;
+   }
+
+   &::before,
+   &::after {
+      box-sizing: inherit;
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border: 2px solid transparent;
+      width: 0;
+      height: 0;
+   }
+   &::before {
+      top: 0;
+      left: 0;
+   }
+   &::after {
+      bottom: 0;
+      right: 0;
+      top: 0;
+      left: 0;
+   }
+   &:hover::before,
+   &:hover::after {
+      width: 100%;
+      height: 100%;
+   }
+
+   &:hover::before {
+      transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+      border-top-color: $button-hover;
+      border-right-color: $button-hover;
+   }
+
+   &:hover::after {
+      transition: width 0.25s ease-out 0.25s, height 0.25s ease-out;
+      border-bottom-color: $button-hover;
+      border-left-color: $button-hover;
+   }
+   &:hover {
+      color: $button-hover;
+   }
+}
+
+/* Responsive  */
+
+@media (max-width: 991.98px) {
+   .main {
+      h2 {
+         margin-top: 70px !important;
+         font-size: 22px;
+         line-height: 40px;
+         padding: 0 40px;
+      }
+   }
+}

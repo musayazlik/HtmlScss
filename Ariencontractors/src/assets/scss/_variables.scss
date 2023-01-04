@@ -1,0 +1,17 @@
+$primary: #088eff;
+$secondary: #04447a;
+
+$font-weight-lighter: 200;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 500;
+$font-weight-bolder: 600;
+
+$box-shadow: 0 0.5rem 1rem rgba($secondary, 0.15);
+$box-shadow-sm: 0 0.125rem 0.25rem rgba($secondary, 0.075);
+$box-shadow-lg: 0 1rem 3rem rgba($secondary, 0.175);
+$box-shadow-inset: inset 0 1px 2px rgba($secondary, 0.075);
+
+$linear-color: linear-gradient(150deg, #0890fff3, #0de7fff8), url("../img/hospital-ward-1338585_1920.jpg") center center;
+
+$primary-shadow: 0 2px 8px rgba($primary, 0.7);

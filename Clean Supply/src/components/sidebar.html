@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+  <title>Sidebar Component</title>
+  <meta name = "author" content = "Musa Yazlık">
+  <meta name = "description" content = "">
+  <meta name = "keywords" content = "">
+  <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+  <meta charset = "UTF-8">
+
+  <!-- Google Font -->
+  <link rel = "preconnect" href = "https://fonts.gstatic.com">
+  <link href = "https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap" rel = "stylesheet">
+
+  <link rel = "stylesheet" href = "../assets/scss/main.scss">
+
+</head>
+
+<body class = "">
+
+<div id = "theme-dark-mode" class = "dark-mode">
+  <i class = "bi bi-moon-stars text-white position-absolute"></i>
+  <i class = "bi bi-brightness-high text-white position-absolute invisible"></i>
+
+</div>
+
+<header id = "header">
+
+</header>
+
+
+<div class = "wrapper-area d-flex ">
+
+  <!-- ************ Sidebar Start ************ -->
+
+  <section id = "sidebar" class = "d-flex position-relative">
+    <nav id = "nav-wrapper" class = "wrapper w-100">
+      <div id = "closes" class = "close mt-2 mr-2 d-block d-md-none ">
+        <svg xmlns = "http://www.w3.org/2000/svg" width = "32" height = "32" fill = "currentColor" class = "bi bi-x"
+             viewBox = "0 0 16 16">
+          <path
+            d = "M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+        </svg>
+      </div>
+
+      <div class = "pt-5 h-100" id = "navbarNav">
+        <ul class = "navbar-nav h-100 ">
+          <li class = "nav-item w-100 px-3 active">
+            <a class = "nav-link w-100 rounded d-flex align-items-center pl-2 " href = "#">
+              <i class="bi bi-house"></i>
+              <p class = "m-0">Dashboard</p>
+            </a>
+          </li>
+          <li class = "nav-item w-100 px-3 ">
+            <a class = "nav-link w-100 rounded d-flex align-items-center pl-2 " href = "#">
+              <i class = "bi bi-cart2"></i>
+              <p class = "m-0">My Orders</p>
+            </a>
+          </li>
+          <li class = "nav-item w-100 px-3 ">
+            <a class = "nav-link w-100 rounded d-flex align-items-center pl-2" href = "#">
+              <i class = "bi bi-star"></i>
+              <p class = "m-0">Special Products</p>
+            </a>
+          </li>
+          <li class = "nav-item w-100 px-3">
+            <a class = "nav-link w-100 rounded d-flex align-items-center pl-2" href = "#">
+              <i class = "bi bi-heart"></i>
+              <p class = "m-0">Favourites</p>
+            </a>
+          </li>
+          <li class = "nav-item w-100 px-3 d-flex flex-column h-auto">
+            <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2 dropdown-toggle"
+               data-toggle = "collapse"
+               aria-expanded = "false"
+               aria-controls = "collapseExample"
+               href = "#categories-menu">
+              <div class = "menu-item-left d-flex align-items-center">
+                <i class = "bi bi-grid "></i>
+                <p class = "m-0">Categories</p>
+              </div>
+              <div class = "menu-item-right pr-2 ">
+                <i class = "bi bi-chevron-right"></i>
+              </div>
+            </a>
+
+            <ul class = "sub-menu pl-0 w-100 mt-2 collapse " id = "categories-menu">
+              <div class = "clearfix">
+                <li class = "nav-item d-flex flex-column h-100">
+                  <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                     data-toggle = "collapse"
+                     aria-expanded = "false"
+                     aria-controls = "collapseExample"
+                     href = "#sub-sub-menu-1">
+                    <div class = "menu-item-left d-flex align-items-center">
+                      <span></span>
+                      <p class = "m-0">Sub Menu</p>
+                    </div>
+                    <div class = "menu-item-right pr-2 ">
+                      <i class = "bi bi-chevron-right"></i>
+                    </div>
+
+                  </a>
+
+                  <ul class = "sub-sub-menu pl-2 w-100 mt-2 collapse " id = "sub-sub-menu-1">
+                    <li class = "nav-item d-flex flex-column active">
+                      <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                      >
+                        <div class = "menu-item-left d-flex align-items-center">
+
+                          <p class = "m-0">Sub-Sub Menu</p>
+                        </div>
+
+                      </a>
+                    </li>
+                    <li class = "nav-item d-flex flex-column">
+                      <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                      >
+                        <div class = "menu-item-left d-flex align-items-center">
+
+                          <p class = "m-0">Sub-Sub Menu</p>
+                        </div>
+
+                      </a>
+                    </li>
+                    <li class = "nav-item d-flex flex-column">
+                      <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                      >
+                        <div class = "menu-item-left d-flex align-items-center">
+
+                          <p class = "m-0">Sub-Sub Menu</p>
+                        </div>
+
+                      </a>
+                    </li>
+                    <li class = "nav-item d-flex flex-column">
+                      <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                      >
+                        <div class = "menu-item-left d-flex align-items-center">
+
+                          <p class = "m-0">Sub-Sub Menu</p>
+                        </div>
+
+                      </a>
+                    </li>
+                    <li class = "nav-item d-flex flex-column">
+                      <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                      >
+                        <div class = "menu-item-left d-flex align-items-center">
+
+                          <p class = "m-0">Sub-Sub Menu</p>
+                        </div>
+
+                      </a>
+                    </li>
+                    <li class = "nav-item d-flex flex-column">
+                      <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                      >
+                        <div class = "menu-item-left d-flex align-items-center">
+
+                          <p class = "m-0">Sub-Sub Menu</p>
+                        </div>
+
+                      </a>
+                    </li>
+                    <li class = "nav-item d-flex flex-column">
+                      <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                      >
+                        <div class = "menu-item-left d-flex align-items-center">
+
+                          <p class = "m-0">Sub-Sub Menu</p>
+                        </div>
+
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class = "nav-item d-flex flex-column h-100">
+                  <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                     data-toggle = "collapse"
+                     aria-expanded = "false"
+                     aria-controls = "collapseExample"
+                     href = "#sub-sub-menu-2">
+                    <div class = "menu-item-left d-flex align-items-center">
+                      <span></span>
+                      <p class = "m-0">Sub Menu</p>
+                    </div>
+                    <div class = "menu-item-right pr-2 ">
+                      <i class = "bi bi-chevron-right"></i>
+                    </div>
+
+                  </a>
+
+                  <ul class = "sub-sub-menu pl-2 w-100 mt-2 collapse " id = "sub-sub-menu-2">
+                    <li class = "nav-item d-flex flex-column ">
+                      <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                      >
+                        <div class = "menu-item-left d-flex align-items-center">
+
+                          <p class = "m-0">Sub-Sub Menu</p>
+                        </div>
+
+                      </a>
+                    </li>
+                    <li class = "nav-item d-flex flex-column">
+                      <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                      >
+                        <div class = "menu-item-left d-flex align-items-center">
+
+                          <p class = "m-0">Sub-Sub Menu</p>
+                        </div>
+
+                      </a>
+                    </li>
+                    <li class = "nav-item d-flex flex-column">
+                      <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                      >
+                        <div class = "menu-item-left d-flex align-items-center">
+
+                          <p class = "m-0">Sub-Sub Menu</p>
+                        </div>
+
+                      </a>
+                    </li>
+                    <li class = "nav-item d-flex flex-column">
+                      <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                      >
+                        <div class = "menu-item-left d-flex align-items-center">
+
+                          <p class = "m-0">Sub-Sub Menu</p>
+                        </div>
+
+                      </a>
+                    </li>
+                    <li class = "nav-item d-flex flex-column">
+                      <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                      >
+                        <div class = "menu-item-left d-flex align-items-center">
+
+                          <p class = "m-0">Sub-Sub Menu</p>
+                        </div>
+
+                      </a>
+                    </li>
+                    <li class = "nav-item d-flex flex-column">
+                      <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                      >
+                        <div class = "menu-item-left d-flex align-items-center">
+
+                          <p class = "m-0">Sub-Sub Menu</p>
+                        </div>
+
+                      </a>
+                    </li>
+                    <li class = "nav-item d-flex flex-column">
+                      <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                      >
+                        <div class = "menu-item-left d-flex align-items-center">
+
+                          <p class = "m-0">Sub-Sub Menu</p>
+                        </div>
+
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class = "nav-item d-flex flex-column h-100">
+                  <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                     data-toggle = "collapse"
+                     aria-expanded = "false"
+                     aria-controls = "collapseExample"
+                     href = "#sub-sub-menu-3">
+                    <div class = "menu-item-left d-flex align-items-center">
+                      <span></span>
+                      <p class = "m-0">Sub Menu</p>
+                    </div>
+                    <div class = "menu-item-right pr-2 ">
+                      <i class = "bi bi-chevron-right"></i>
+                    </div>
+
+                  </a>
+
+                  <ul class = "sub-sub-menu pl-2 w-100 mt-2 collapse " id = "sub-sub-menu-3">
+                    <li class = "nav-item d-flex flex-column">
+                      <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                      >
+                        <div class = "menu-item-left d-flex align-items-center">
+
+                          <p class = "m-0">Sub-Sub Menu</p>
+                        </div>
+
+                      </a>
+                    </li>
+                    <li class = "nav-item d-flex flex-column">
+                      <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                      >
+                        <div class = "menu-item-left d-flex align-items-center">
+
+                          <p class = "m-0">Sub-Sub Menu</p>
+                        </div>
+
+                      </a>
+                    </li>
+                    <li class = "nav-item d-flex flex-column">
+                      <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                      >
+                        <div class = "menu-item-left d-flex align-items-center">
+
+                          <p class = "m-0">Sub-Sub Menu</p>
+                        </div>
+
+                      </a>
+                    </li>
+                    <li class = "nav-item d-flex flex-column">
+                      <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                      >
+                        <div class = "menu-item-left d-flex align-items-center">
+
+                          <p class = "m-0">Sub-Sub Menu</p>
+                        </div>
+
+                      </a>
+                    </li>
+                    <li class = "nav-item d-flex flex-column">
+                      <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                      >
+                        <div class = "menu-item-left d-flex align-items-center">
+
+                          <p class = "m-0">Sub-Sub Menu</p>
+                        </div>
+
+                      </a>
+                    </li>
+                    <li class = "nav-item d-flex flex-column">
+                      <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                      >
+                        <div class = "menu-item-left d-flex align-items-center">
+
+                          <p class = "m-0">Sub-Sub Menu</p>
+                        </div>
+
+                      </a>
+                    </li>
+                    <li class = "nav-item d-flex flex-column">
+                      <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                      >
+                        <div class = "menu-item-left d-flex align-items-center">
+
+                          <p class = "m-0">Sub-Sub Menu</p>
+                        </div>
+
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class = "nav-item d-flex flex-column h-100">
+                  <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                     data-toggle = "collapse"
+                     aria-expanded = "false"
+                     aria-controls = "collapseExample"
+                     href = "#sub-sub-menu-4">
+                    <div class = "menu-item-left d-flex align-items-center">
+                      <span></span>
+                      <p class = "m-0">Sub Menu</p>
+                    </div>
+                    <div class = "menu-item-right pr-2 ">
+                      <i class = "bi bi-chevron-right"></i>
+                    </div>
+
+                  </a>
+
+                  <ul class = "sub-sub-menu pl-2 w-100 mt-2 collapse " id = "sub-sub-menu-4">
+                    <li class = "nav-item d-flex flex-column">
+                      <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                      >
+                        <div class = "menu-item-left d-flex align-items-center">
+
+                          <p class = "m-0">Sub-Sub Menu</p>
+                        </div>
+
+                      </a>
+                    </li>
+                    <li class = "nav-item d-flex flex-column">
+                      <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                      >
+                        <div class = "menu-item-left d-flex align-items-center">
+
+                          <p class = "m-0">Sub-Sub Menu</p>
+                        </div>
+
+                      </a>
+                    </li>
+                    <li class = "nav-item d-flex flex-column">
+                      <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                      >
+                        <div class = "menu-item-left d-flex align-items-center">
+
+                          <p class = "m-0">Sub-Sub Menu</p>
+                        </div>
+
+                      </a>
+                    </li>
+                    <li class = "nav-item d-flex flex-column">
+                      <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                      >
+                        <div class = "menu-item-left d-flex align-items-center">
+
+                          <p class = "m-0">Sub-Sub Menu</p>
+                        </div>
+
+                      </a>
+                    </li>
+                    <li class = "nav-item d-flex flex-column">
+                      <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                      >
+                        <div class = "menu-item-left d-flex align-items-center">
+
+                          <p class = "m-0">Sub-Sub Menu</p>
+                        </div>
+
+                      </a>
+                    </li>
+                    <li class = "nav-item d-flex flex-column">
+                      <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                      >
+                        <div class = "menu-item-left d-flex align-items-center">
+
+                          <p class = "m-0">Sub-Sub Menu</p>
+                        </div>
+
+                      </a>
+                    </li>
+                    <li class = "nav-item d-flex flex-column">
+                      <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                      >
+                        <div class = "menu-item-left d-flex align-items-center">
+
+                          <p class = "m-0">Sub-Sub Menu</p>
+                        </div>
+
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class = "nav-item d-flex flex-column h-100">
+                  <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                     data-toggle = "collapse"
+                     aria-expanded = "false"
+                     aria-controls = "collapseExample"
+                     href = "#sub-sub-menu-5">
+                    <div class = "menu-item-left d-flex align-items-center">
+                      <span></span>
+                      <p class = "m-0">Sub Menu</p>
+                    </div>
+                    <div class = "menu-item-right pr-2 ">
+                      <i class = "bi bi-chevron-right"></i>
+                    </div>
+
+                  </a>
+
+                  <ul class = "sub-sub-menu pl-2 w-100 mt-2 collapse " id = "sub-sub-menu-5">
+                    <li class = "nav-item d-flex flex-column">
+                      <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                      >
+                        <div class = "menu-item-left d-flex align-items-center">
+
+                          <p class = "m-0">Sub-Sub Menu</p>
+                        </div>
+
+                      </a>
+                    </li>
+                    <li class = "nav-item d-flex flex-column">
+                      <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                      >
+                        <div class = "menu-item-left d-flex align-items-center">
+
+                          <p class = "m-0">Sub-Sub Menu</p>
+                        </div>
+
+                      </a>
+                    </li>
+                    <li class = "nav-item d-flex flex-column">
+                      <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                      >
+                        <div class = "menu-item-left d-flex align-items-center">
+
+                          <p class = "m-0">Sub-Sub Menu</p>
+                        </div>
+
+                      </a>
+                    </li>
+                    <li class = "nav-item d-flex flex-column">
+                      <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                      >
+                        <div class = "menu-item-left d-flex align-items-center">
+
+                          <p class = "m-0">Sub-Sub Menu</p>
+                        </div>
+
+                      </a>
+                    </li>
+                    <li class = "nav-item d-flex flex-column">
+                      <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                      >
+                        <div class = "menu-item-left d-flex align-items-center">
+
+                          <p class = "m-0">Sub-Sub Menu</p>
+                        </div>
+
+                      </a>
+                    </li>
+                    <li class = "nav-item d-flex flex-column">
+                      <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                      >
+                        <div class = "menu-item-left d-flex align-items-center">
+
+                          <p class = "m-0">Sub-Sub Menu</p>
+                        </div>
+
+                      </a>
+                    </li>
+                    <li class = "nav-item d-flex flex-column">
+                      <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                      >
+                        <div class = "menu-item-left d-flex align-items-center">
+
+                          <p class = "m-0">Sub-Sub Menu</p>
+                        </div>
+
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class = "nav-item d-flex flex-column h-100">
+                  <a class = "nav-link w-100 rounded d-flex align-items-center justify-content-between pl-2"
+                     data-toggle = "collapse"
+                     aria-expanded = "false"
+                     aria-controls = "collapseExample"
+                     href = "#">
+                    <div class = "menu-item-left d-flex align-items-center">
+                      <span></span>
+                      <p class = "m-0">Sub Menu</p>
+                    </div>
+                    <div class = "menu-item-right pr-2  d-none">
+                      <i class = "icon-arrow-right"></i>
+                    </div>
+                  </a>
+                </li>
+              </div>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </section>
+
+
+  <!-- ************ Sidebar End ************ -->
+
+  <div id = "content" class = "min-vh-100" style = "z-index: 0;">
+
+
+  </div>
+</div>
+
+<footer id = "footer" style = "height: 500px">
+
+</footer>
+
+
+<script src = "../assets/js/main.js"></script>
+</body>
+
+</html>
